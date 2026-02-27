@@ -87,7 +87,7 @@ Every control in the ResolvX control matrix maps back to an owner defined here.
 
 ## Formal Artifact
 
-> 📄 **[Download Full Stakeholder Register (.docx)](./stakeholder_register.docx)**
+> 📄 **[Download Full Stakeholder Register (.pdf)](./formal_artifact/stakeholder_register.pdf)**
 > *Formal version with complete RACI assignments, approval signatures, and document control.*
 
 ---
