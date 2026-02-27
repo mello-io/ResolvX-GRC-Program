@@ -137,7 +137,7 @@ Think of it like a hub for financial disputes — banks, credit unions, fintechs
 
 ## Formal Artifact
 
-> 📄 **[Download Full Company Profile (.docx)](./company_profile.docx)**
+> 📄 **[Download Full Company Profile (.pdf)](./formal_artifact/company_profile.pdf)**
 > *Formal version with complete asset tables, signatures, and document control.*
 
 ---
