@@ -30,10 +30,11 @@ This repository documents the full lifecycle of ResolvX's internal GRC program �
 resolvx-grc-program/
 │
 ├── 00_program_foundation/
-│   ├── objectives_scope_goals.docx          # Living document — program charter
-│   ├── program_roadmap.docx                 # Phased roadmap with milestones
+│   ├── objectives_scope_goals.md            # Living document — program charter
+│   ├── program_roadmap.md                   # Phased roadmap with milestones
 │   ├── company_profile.md                   # ResolvX background & asset inventory
-│   └── stakeholder_register.md              # Roles, owners, accountabilities
+│   ├── stakeholder_register.md              # Roles, owners, accountabilities
+│   └── formal_artifact/                     # Document folder of all formal deliverables
 │
 ├── 01_risk_management/
 │   ├── risk_register.xlsx                   # Full risk register with heat map
