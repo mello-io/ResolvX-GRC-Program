@@ -141,7 +141,7 @@ Synthesize the entire program into a public-facing Trust Center. Demonstrates Re
 
 ## Formal Artifact
 
-> 📄 **[Download Full Program Roadmap (.docx)](./program_roadmap.docx)**
+> 📄 **[Download Full Program Roadmap (.pdf)](./formal_artifact/program_roadmap.pdf)**
 > *Formal version with phase success criteria, milestone sign-offs, and document control history.*
 
 ---
