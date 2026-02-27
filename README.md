@@ -112,8 +112,10 @@ resolvx-grc-program/
 
 | Document | Description |
 |----------|-------------|
-| [Objectives, Scope & Goals](./00_program_foundation/objectives_scope_goals.docx) | Program charter defining what we're building and why |
-| [Program Roadmap](./00_program_foundation/program_roadmap.docx) | Phased plan with milestones and deliverables |
+| [Objectives, Scope & Goals](./00_program_foundation/objectives_scope_goals.md) | Program charter defining what we're building and why |
+| [Program Roadmap](./00_program_foundation/program_roadmap.md) | Phased plan with milestones and deliverables |
+
+> Note : Detailed documenation can be found inside ` /00_program_foundation/formal_artifacts/ `.
 
 ---
 
