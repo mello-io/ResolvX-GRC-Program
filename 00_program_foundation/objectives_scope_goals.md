@@ -100,7 +100,7 @@ This document is the formal charter for the ResolvX GRC program. It defines the 
 
 ## Formal Artifact
 
-> 📄 **[Download Full Program Charter (.docx)](./objectives_scope_goals.docx)**
+> 📄 **[Download Full Program Charter (.pdf)](./formal_artifact/objectives_scope_goals.pdf)**
 > *Formal version with complete scope tables, approval signatures, and document control history.*
 
 ---
