@@ -159,7 +159,7 @@ All personnel must comply with the following minimum requirements, enforced by t
 | **Shared credentials** | Strictly prohibited, all accounts must be individual |
 
 Personnel must:
-- Never share passwords with anyone — including colleagues or IT staff
+- Never share passwords with anyone including colleagues or IT staff
 - Never write down passwords in plaintext
 - Immediately report suspected credential compromise to IT Admin
 
