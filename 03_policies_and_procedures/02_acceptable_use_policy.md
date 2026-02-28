@@ -104,7 +104,7 @@ Internet access is provided for business purposes. Acceptable internet use inclu
 ### 6.1 Email
 Corporate email (Google Workspace / M365) is the authorised platform for business communications. Personnel must:
 - Not use personal email accounts for ResolvX business communications involving non-public information
-- Exercise caution before clicking links or opening attachments — when in doubt, verify with the sender via a separate channel
+- Exercise caution before clicking links or opening attachments. When in doubt, verify with the sender via a separate channel
 - Report suspected phishing emails to the GRC Lead before clicking anything
 - Not auto-forward corporate email to personal accounts
 
