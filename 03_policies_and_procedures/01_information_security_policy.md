@@ -22,7 +22,7 @@ ResolvX operates as a cloud-native fintech service organisation processing dispu
 This policy applies to:
 
 - **All personnel** - employees, contractors, consultants, interns, and any third party granted access to ResolvX systems or data
-- **All information assets** - digital, physical, or otherwise — owned, leased, or processed by ResolvX
+- **All information assets** - digital, physical, or otherwise owned, leased, or processed by ResolvX
 - **All systems and infrastructure** - including AWS cloud environments, corporate endpoints, SaaS applications, APIs, and third-party integrations
 - **All locations** - including ResolvX offices, remote work environments, and any location from which ResolvX systems are accessed
 
