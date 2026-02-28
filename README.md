@@ -34,34 +34,37 @@ resolvx-grc-program/
 │   ├── program_roadmap.md                   # Phased roadmap with milestones
 │   ├── company_profile.md                   # ResolvX background & asset inventory
 │   ├── stakeholder_register.md              # Roles, owners, accountabilities
-│   └── formal_artifact/                     # Document folder of all formal deliverables
+│   └── formal_artifact/                     # Document folder for formal deliverables
 │
 ├── 01_risk_management/
 │   ├── risk_register.xlsx                   # Full risk register with heat map
 │   ├── risk_methodology.md                  # Scoring criteria and approach
-│   ├── risk_summary_report.docx             # Executive risk summary
-│   └── threat_landscape.md                  # Industry-specific threat context
+│   ├── risk_summary_report.md               # Executive risk summary
+│   ├── threat_landscape.md                  # Industry-specific threat context
+│   └── formal_artifact/                     # Document folder for formal deliverables
 │
 ├── 02_compliance_framework/
 │   ├── iso27001_control_matrix.xlsx         # Annex A 2022 control mapping
 │   ├── soc2_criteria_mapping.xlsx           # SOC 2 TSC CC1–CC9 mapping
 │   ├── nist_csf_mapping.xlsx                # NIST CSF 2.0 function mapping
-│   ├── gap_analysis_report.docx             # Consolidated gap analysis
-│   └── control_owners_register.md           # Control ownership assignments
+│   ├── gap_analysis_report.md               # Consolidated gap analysis
+│   ├── control_owners_register.md           # Control ownership assignments
+│   └── formal_artifact/                     # Document folder for formal deliverables
 │
 ├── 03_policies_and_procedures/
-│   ├── information_security_policy.docx
-│   ├── access_control_policy.docx
-│   ├── incident_response_policy.docx
-│   ├── data_classification_policy.docx
-│   ├── vendor_management_policy.docx
-│   └── acceptable_use_policy.docx
+│   ├── information_security_policy.md
+│   ├── access_control_policy.md
+│   ├── incident_response_policy.md
+│   ├── data_classification_policy.md
+│   ├── vendor_management_policy.md
+│   ├── acceptable_use_policy.md
+│   └── formal_artifact/                     # Document folder for formal deliverables
 │
 ├── 04_vendor_risk/
-│   ├── vendor_assessment_template.xlsx      # Questionnaire with scoring
-│   ├── vendor_risk_register.xlsx            # Inventory of third parties
-│   ├── aws_assessment_report.docx           # AWS as primary cloud vendor
-│   └── vendor_scorecard_template.xlsx
+│   ├── vendor_register.xlsx                 # Inventory of third parties
+│   ├── vendor_security_questionnaire.xlsx   # Questionnaire form to assess vendors
+│   ├── tprm_tier1_assessment.xlsx           # Completed assessments for the 6 T1 critical vendors
+│   └── tprm_sub-processor_register.xlsx     # How ResolvX amanges self and client data
 │
 ├── 05_incident_response/
 │   ├── ir_plan.docx                         # Full IR plan (ISO 27035 aligned)
