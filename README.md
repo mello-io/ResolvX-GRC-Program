@@ -80,9 +80,9 @@ resolvx-grc-program/
 │   ├── internal_audit_checklist.xlsx        # Control testing checklist
 │   ├── evidence_library/                    # Screenshots, configs, logs
 │   │   └── README.md
-│   ├── audit_report.docx                    # Internal audit findings report
+│   ├── audit_readiness_showcase.md          # Highlight of Audit Readiness program
 │   ├── corrective_action_plan.xlsx          # CAP with owners and dates
-│   └── soc2_readiness_assessment.docx       # SOC 2 Type II readiness report
+│   └── formal_artifact/                     # Document folder for formal deliverables
 │
 ├── 07_compliance_dashboard/
 │   └── compliance_dashboard.xlsx            # Control coverage & risk status
