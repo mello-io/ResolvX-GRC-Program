@@ -24,13 +24,14 @@ This plan exists so that when something goes wrong, no one has to improvise. Eve
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                                                                 │
-│   PREPARATION  →  DETECTION & ANALYSIS  →  CONTAINMENT /       │
+│   PREPARATION  →  DETECTION & ANALYSIS  →  CONTAINMENT /        │
 │                                            ERADICATION /        │
-│         ↑              RECOVERY           ↑                     │
-│         └──────  POST-INCIDENT ACTIVITY ──┘                     │
+│         ↑              RECOVERY              ↑                  │
+│         └──────  POST-INCIDENT ACTIVITY ─────┘                  │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
+<br>
 
 | Phase | Key Output | NIST Ref |
 |---|---|---|
@@ -68,8 +69,7 @@ This plan exists so that when something goes wrong, no one has to improvise. Eve
 
 **P1 out-of-hours escalation path:**
 ```
-#security-alerts (Slack auto-page) → GRC Lead (direct call)
-→ [15 min no response] → CISO → CEO
+#security-alerts (Slack auto-page) → GRC Lead (direct call) → [15 min no response] → CISO → CEO
 ```
 
 ---
@@ -140,14 +140,14 @@ Per ISO A5.28 and NIST SP 800-61 s.3.3.2:
 
 | Document | Location |
 |---|---|
-| 📄 IR Plan (formal) | `05_incident_response/formal_artifact/ir_plan.docx` |
-| 🔴 Runbook - Phishing | `05_incident_response/runbook_phishing.md` |
-| 🔴 Runbook - Ransomware | `05_incident_response/runbook_ransomware.md` |
-| 🔴 Runbook - Data Breach | `05_incident_response/runbook_data_breach.md` |
+| 📄 IR Plan (formal) | `05_incident_response/formal_artifact/IR-PLAN-001.pdf` |
+| 🔴 Runbook - Phishing | `05_incident_response/ir_runbooks/runbook_phishing.md` |
+| 🔴 Runbook - Ransomware | `05_incident_response/ir_runbooks/runbook_ransomware.md` |
+| 🔴 Runbook - Data Breach | `05_incident_response/ir_runbooks/runbook_data_breach.md` |
 | 📊 Tabletop Report | `05_incident_response/tabletop_simulation_report.xlsx` |
 | 📋 Incident Log Template | `05_incident_response/incident_log_template.xlsx` |
-| 🔒 Access Control Policy | `03_policies_and_procedures/formal_artifact/pol-003_access_control_policy.docx` |
-| 🔒 Privacy Programme | `03_policies_and_procedures/formal_artifact/pol-006_privacy_programme.docx` |
+| 🔒 Access Control Policy | `03_policies_and_procedures/formal_artifact/pol-003_access_control_policy.pdf` |
+| 🔒 Privacy Programme | `03_policies_and_procedures/formal_artifact/pol-006_privacy_programme.pdf` |
 
 ---
 
