@@ -1,9 +1,9 @@
 # ResolvX — GRC Compliance & Audit Readiness Program
 
-> **Program Owner:** Derick G. Dmello — GRC Lead, Risk & Compliance  
-> **Status:** 🟡 In Progress — Phase 2: Risk & Controls  
+> **Program Owner:** Derick Dmello — GRC Lead, Risk & Compliance, ResolvX  
+> **Status:** 🔵 In Progress — Phase 6: Trust Center  
 > **Frameworks:** ISO 27001:2022 · SOC 2 Type II · NIST CSF 2.0 · PCI-DSS v4.0  
-> **Last Updated:** Feb 2026
+> **Last Updated:** March 2026
 
 ---
 
@@ -85,16 +85,11 @@ resolvx-grc-program/
 │   └── soc2_readiness_assessment.docx       # SOC 2 Type II readiness report
 │
 ├── 07_compliance_dashboard/
-│   ├── compliance_dashboard.xlsx            # Control coverage & risk status
-│   ├── kri_kpi_tracker.xlsx                 # Key Risk/Performance Indicators
-│   └── dashboard_screenshots/
+│   └── compliance_dashboard.xlsx            # Control coverage & risk status
 │
 └── 08_trust_center/
-    ├── trust_center_overview.md             # Public-facing trust narrative
-    ├── certifications_and_reports.md        # Certs, audit letters, SOC reports
-    ├── security_overview.md                 # Security controls summary
-    ├── privacy_overview.md                  # Data handling & privacy posture
-    └── subprocessors.md                     # Vendor/subprocessor list
+    └── trust_center.html                    # Public-facing trust center
+
 ```
 
 ---
@@ -104,11 +99,11 @@ resolvx-grc-program/
 | Phase | Focus | Status |
 |-------|-------|--------|
 | **Phase 1** | Foundation — Company profile, scope, risk methodology | ✅ Completed |
-| **Phase 2** | Risk & Controls — Risk register, framework mapping, gap analysis | 🟡 In Progress |
-| **Phase 3** | Policies & Vendor Risk — Policy library, vendor assessments | ⬜ Planned |
-| **Phase 4** | Incident Response — IR plan, runbooks, tabletop simulation | ⬜ Planned |
-| **Phase 5** | Audit Readiness — Internal audit, evidence collection, CAP | ⬜ Planned |
-| **Phase 6** | Trust Center — Dashboard, public trust narrative, certifications | ⬜ Planned |
+| **Phase 2** | Risk & Controls — Risk register, framework mapping, gap analysis | ✅ Completed |
+| **Phase 3** | Policies & Vendor Risk — Policy library, vendor assessments | ✅ Completed |
+| **Phase 4** | Incident Response — IR plan, runbooks, tabletop simulation | ✅ Completed |
+| **Phase 5** | Audit Readiness — Internal audit, evidence collection, CAP | ✅ Completed |
+| **Phase 6** | Trust Center — Dashboard, public trust narrative, certifications | 🔵 In Progress |
 
 ---
 
@@ -124,7 +119,19 @@ resolvx-grc-program/
 ---
 
 ## 🔗 Trust Center
-> Coming in Phase 6 — will showcase certifications, security controls, privacy posture, and audit status in a public-facing format modeled after enterprise trust centers.
+
+The Trust Center is a production-ready, single-file HTML page designed for sharing with enterprise clients during security reviews. It covers ResolvX's full security posture, compliance status, data practices, and incident response commitments.
+
+**[`08_trust_center/trust_center.html`](./08_trust_center/trust_center.html)**
+
+| Section | Content |
+| --- | --- |
+| Security Posture | 6 control domains: identity, cloud, endpoint, vulnerability management, monitoring, awareness |
+| Compliance | ISO 27001:2022, SOC 2 Type II status, GDPR, NIST CSF 2.0, NIST SP 800-61 |
+| Data Practices | EU data residency, encryption standards, retention, access controls, GDPR obligations, sub-processors |
+| Incident Response | 5-stage response lifecycle · P1–P4 SLA table · client notification commitments |
+| Vendor Security | TPRM programme summary · 6 key vendors with certification and DPA status |
+
 
 ---
 
