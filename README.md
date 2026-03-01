@@ -67,13 +67,14 @@ resolvx-grc-program/
 │   └── tprm_sub-processor_register.xlsx     # How ResolvX amanges self and client data
 │
 ├── 05_incident_response/
-│   ├── ir_plan.docx                         # Full IR plan (ISO 27035 aligned)
+│   ├── ir_plan.md                           # IR plan (ISO 27035 aligned)
 │   ├── ir_runbooks/
 │   │   ├── runbook_phishing.md
 │   │   ├── runbook_ransomware.md
 │   │   └── runbook_data_breach.md
-│   ├── tabletop_simulation_report.docx      # Tabletop exercise results
-│   └── incident_log_template.xlsx
+│   ├── tabletop_simulation_report.xlsx      # Tabletop exercise results
+│   ├── incident_log_template.xlsx
+│   └── formal_artifact/                     # Document folder for formal deliverables
 │
 ├── 06_audit_readiness/
 │   ├── internal_audit_checklist.xlsx        # Control testing checklist
