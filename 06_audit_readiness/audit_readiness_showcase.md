@@ -120,8 +120,8 @@ Mar 2027 ─── SOC 2 Type II report issued
 
 | Document | Location |
 |---|---|
-| 📄 Audit Report (formal) | `06_audit_readiness/formal_artifact/audit_report.docx` |
-| 📄 SOC 2 Readiness (formal) | `06_audit_readiness/formal_artifact/soc2_readiness_assessment.docx` |
+| 📄 Audit Report (formal) | `06_audit_readiness/formal_artifact/AUDIT-RPT-001.pdf` |
+| 📄 SOC 2 Readiness (formal) | `06_audit_readiness/formal_artifact/AUDIT-SOC2-001.pdf` |
 | 📊 Audit Checklist | `06_audit_readiness/internal_audit_checklist.xlsx` |
 | 📊 Corrective Action Plan | `06_audit_readiness/corrective_action_plan.xlsx` |
 | 📂 Evidence Library | `06_audit_readiness/evidence_library/README.md` |
