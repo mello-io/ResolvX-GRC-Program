@@ -1,6 +1,6 @@
 # Evidence Library
 
-**Owner:** GRC Lead - Derick G. Dmello | **Classification:** Internal - Confidential
+**Owner:** GRC Lead - Derick G. Dmello | **Classification:** Internal - Confidential <br>
 **Purpose:** Structured repository of audit evidence supporting ResolvX's ISMS and SOC 2 Type II readiness
 
 > This directory is the auditor-facing evidence store. Every control tested in `internal_audit_checklist.xlsx` should have at least one piece of evidence linked or stored here. Evidence is organised by control domain to allow an external auditor to navigate directly to relevant artefacts.
@@ -12,7 +12,7 @@
 ```
 evidence_library/
 │
-├── README.md                          ← This file
+├── README.md                          
 │
 ├── 01_governance/
 │   ├── policy_approval_signatures/    ← CISO/CEO approval records for POL-001 to POL-006
