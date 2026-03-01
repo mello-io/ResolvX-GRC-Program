@@ -122,7 +122,7 @@ resolvx-grc-program/
 
 The Trust Center is a production-ready, single-file HTML page designed for sharing with enterprise clients during security reviews. It covers ResolvX's full security posture, compliance status, data practices, and incident response commitments.
 
-**[`08_trust_center/trust_center.html`](./08_trust_center/trust_center.html)**
+**Live:** [mello-io.github.io/ResolvX-GRC-Program](https://mello-io.github.io/ResolvX-GRC-Program/)
 
 | Section | Content |
 | --- | --- |
