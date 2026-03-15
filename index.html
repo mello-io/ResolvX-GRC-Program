@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trust Center — ResolvX</title>
+  <title>Trust Center | ResolvX GRC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -38,32 +38,44 @@
       font-size: 16px;
     }
 
-    /* ── NAV ── */
+    /* ══════════════════════════════════════════
+       NAV
+    ══════════════════════════════════════════ */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--navy);
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 4rem;
-      height: 64px;
+      padding: 0 4rem; height: 64px;
       border-bottom: 2px solid var(--teal);
     }
+    .nav-brand {
+      display: flex; align-items: center; gap: 12px;
+    }
     .nav-logo {
-      font-size: 1.3rem; font-weight: 700; color: var(--white);
+      font-size: 1.25rem; font-weight: 700; color: var(--white);
       letter-spacing: -0.02em;
     }
     .nav-logo span { color: var(--teal2); }
-    .nav-links { display: flex; gap: 2rem; }
+    .nav-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.2); }
+    .nav-page { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.55); }
+    .nav-links { display: flex; gap: 1.75rem; }
     .nav-links a {
-      color: rgba(255,255,255,0.75);
-      text-decoration: none; font-size: 0.875rem; font-weight: 500;
-      transition: color 0.2s;
+      color: rgba(255,255,255,0.7); text-decoration: none;
+      font-size: 0.875rem; font-weight: 500; transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--white); }
-    .nav-badge {
-      background: var(--teal); color: var(--white);
-      font-size: 0.75rem; font-weight: 600; padding: 4px 12px;
-      border-radius: 100px; letter-spacing: 0.03em;
+    .nav-status {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(74,222,128,0.15); border: 1px solid rgba(74,222,128,0.3);
+      color: #4ADE80; font-size: 0.75rem; font-weight: 600;
+      padding: 5px 13px; border-radius: 100px; letter-spacing: 0.03em;
     }
+    .nav-status .pulse {
+      width: 7px; height: 7px; background: #4ADE80; border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.35} }
+
 
     /* ── HERO ── */
     .hero {
@@ -86,7 +98,7 @@
       background-size: 40px 40px;
     }
     .hero-inner {
-      position: relative; max-width: 900px;
+      position: relative;
     }
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
@@ -108,7 +120,7 @@
       max-width: 620px; font-weight: 300; margin-bottom: 2.5rem;
     }
     .hero-certs {
-      display: flex; flex-wrap: wrap; gap: 1rem;
+      display: flex; flex-wrap: nowrap; gap: 1rem;
     }
     .cert-pill {
       display: flex; align-items: center; gap: 8px;
@@ -119,6 +131,12 @@
     }
     .cert-pill:hover { background: rgba(255,255,255,0.18); }
     .cert-pill svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .align-dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .align-dot.green  { background: #4ADE80; }
+    .align-dot.amber  { background: #FCD34D; }
+    .align-dot.blue   { background: #93C5FD; }
 
     /* ── CONTENT WRAPPER ── */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
@@ -137,9 +155,115 @@
       letter-spacing: -0.025em; margin-bottom: 1rem;
     }
     .section-sub {
-      color: var(--muted); font-size: 1rem; max-width: 640px;
+      color: var(--muted); font-size: 1rem;
       font-weight: 400; margin-bottom: 3rem;
     }
+
+    /* ══════════════════════════════════════════
+       DOCUMENT LIBRARY  —  C2 structure + G1 access treatment
+    ══════════════════════════════════════════ */
+    .lib-controls {
+      display: flex; align-items: center;
+      justify-content: space-between; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap;
+    }
+    .filter-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 5px 15px; border-radius: 100px; font-size: 0.8rem; font-weight: 600;
+      border: 1px solid var(--dgray); background: var(--white); color: var(--muted);
+      cursor: pointer; transition: all 0.15s; font-family: 'DM Sans', sans-serif;
+    }
+    .filter-btn:hover { border-color: var(--navy); color: var(--navy); }
+    .filter-btn.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+    .lib-count { font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
+
+    .doc-phase { margin-bottom: 2rem; }
+    .doc-phase-header {
+      font-size: 0.75rem; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      display: flex; align-items: center; gap: 8px;
+      padding-bottom: 0.6rem; border-bottom: 1px solid var(--dgray);
+      margin-bottom: 0.75rem;
+    }
+    .phase-tag {
+      background: var(--navy); color: var(--white);
+      font-size: 0.65rem; padding: 2px 8px;
+      border-radius: 100px; font-weight: 700; letter-spacing: 0.04em;
+    }
+
+    /* ── DOC CARD ── */
+    .doc-card {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--white); border: 1px solid var(--mgray);
+      border-radius: 10px; padding: 0.9rem 1.25rem; margin-bottom: 0.5rem;
+      transition: box-shadow 0.15s, border-color 0.15s; text-decoration: none; color: inherit;
+    }
+    .doc-card:hover { border-color: var(--navy2); box-shadow: 0 2px 14px rgba(30,58,95,0.1); }
+    .doc-card.locked { background: var(--lgray); }
+    .doc-card-left { display: flex; align-items: center; gap: 1rem; min-width: 0; flex: 1; }
+
+    .doc-icon {
+      width: 38px; height: 38px; border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0; position: relative;
+    }
+    .doc-icon.xlsx { background: #D1FAE5; }
+    .doc-icon.docx { background: #DBEAFE; }
+    .doc-icon.md   { background: #F3F4F6; }
+    .doc-icon.html { background: #FEF3C7; }
+    .doc-icon.locked-icon { background: var(--mgray); }
+    .lock-overlay {
+      position: absolute; bottom: -3px; right: -3px;
+      background: var(--slate); color: var(--white);
+      font-size: 0.55rem; width: 14px; height: 14px;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      border: 2px solid var(--lgray);
+    }
+
+    .doc-meta { min-width: 0; }
+    .doc-name {
+      font-size: 0.875rem; font-weight: 600; color: var(--text);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .doc-card.locked .doc-name { color: var(--slate); }
+    .doc-desc { font-size: 0.78rem; color: var(--muted); margin-top: 1px; }
+
+    .doc-card-right {
+      display: flex; align-items: center; gap: 0.75rem;
+      flex-shrink: 0; margin-left: 1rem;
+    }
+    .type-tag {
+      font-size: 0.68rem; font-weight: 700; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.06em;
+      background: var(--lgray); border: 1px solid var(--dgray);
+      padding: 2px 7px; border-radius: 4px;
+    }
+
+    /* ── ACCESS BADGES (G1 treatment) ── */
+    .access-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 10px; border-radius: 100px;
+      font-size: 0.72rem; font-weight: 700; white-space: nowrap;
+    }
+    .access-badge.public { background: var(--lgreen); color: var(--green); }
+    .access-badge.nda    { background: var(--lred);   color: var(--red);   }
+
+    /* ── ACTION BUTTONS (G1 treatment) ── */
+    .doc-btn {
+      font-size: 0.8rem; font-weight: 600;
+      padding: 6px 14px; border-radius: 7px;
+      cursor: pointer; text-decoration: none;
+      white-space: nowrap; font-family: 'DM Sans', sans-serif;
+      border: none; transition: all 0.15s;
+    }
+    .doc-btn.view {
+      background: var(--lblue); color: var(--navy2);
+    }
+    .doc-btn.view:hover { background: #BFDBFE; }
+    .doc-btn.request {
+      background: var(--white); color: var(--slate);
+      border: 1px solid var(--dgray);
+    }
+    .doc-btn.request:hover { background: var(--lred); color: var(--red); border-color: var(--lred); }
 
     /* ── POSTURE GRID ── */
     .posture-grid {
@@ -391,8 +515,13 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Resolv<span>X</span></div>
+  <div class="nav-brand">
+    <div class="nav-logo">Resolv<span>X</span></div>
+    <span class="nav-sep"></span>
+    <span class="nav-page">Trust Center</span>
+  </div>
   <div class="nav-links">
+    <a href="#documents">Library</a>
     <a href="#posture">Security Posture</a>
     <a href="#compliance">Compliance</a>
     <a href="#data">Data Practices</a>
@@ -400,7 +529,9 @@
     <a href="#vendors">Vendors</a>
     <a href="#contact">Contact</a>
   </div>
-  <div class="nav-badge">Trust Center</div>
+  <div class="nav-status">
+    <span class="pulse"></span> All Systems Operational
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -414,20 +545,29 @@
     <p>ResolvX is built on the premise that financial dispute resolution requires the highest standards of data protection. This page documents how we protect your data, our control environment, and our path to independent certification.</p>
     <div class="hero-certs">
       <div class="cert-pill">
+        <span class="align-dot green"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        ISO 27001:2022 Aligned
+        ISO 27001:2022 : Aligned
       </div>
       <div class="cert-pill">
+        <span class="align-dot amber"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        SOC 2 Type II In Progress
+        SOC 2 Type II : In Progress
       </div>
       <div class="cert-pill">
+        <span class="align-dot green"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        GDPR Compliant
+        GDPR : Aligned
       </div>
       <div class="cert-pill">
+        <span class="align-dot green"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Cloud-Native (AWS EU)
+        NIST CSF 2.0 : Aligned
+      </div>
+      <div class="cert-pill">
+        <span class="align-dot blue"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        NIST SP 800-61 : Implemented
       </div>
     </div>
   </div>
@@ -446,19 +586,397 @@
     </div>
     <div class="metric">
       <div class="value">100<span>%</span></div>
-      <div class="label">MFA Enforced Across All Systems</div>
+      <div class="label">MFA Enforced <br> Across All Systems</div>
     </div>
     <div class="metric">
       <div class="value"><span>0</span></div>
-      <div class="label">Major Nonconformities (Q1 2026 Audit)</div>
+      <div class="label">Major Nonconformities <br>(Q1 2026 Audit)</div>
     </div>
   </div>
 </div>
 
+<!-- ═══ DOCUMENT LIBRARY (C2 layout · G1 access treatment) ═══ -->
+<section id="documents">
+  <div class="container">
+    <div class="last-updated"><span class="dot"></span> Last updated: March 2026</div>
+    <div class="section-label">Programme Deliverables</div>
+    <h2 class="section-title">Document Library</h2>
+    <p class="section-sub">ResolvX is proud to showcase its six-phase GRC programme. Public documents link directly to the project repository. <br>Confidential documents require a signed NDA - request access via security@resolvx.io.</p>
+
+    <!-- FILTERS (C2) -->
+    <div class="lib-controls">
+      <div class="filter-row">
+        <button class="filter-btn active" onclick="filterDocs('all',this)">All</button>
+        <button class="filter-btn" onclick="filterDocs('policy',this)">Policies</button>
+        <button class="filter-btn" onclick="filterDocs('risk',this)">Risk</button>
+        <button class="filter-btn" onclick="filterDocs('audit',this)">Audit</button>
+        <button class="filter-btn" onclick="filterDocs('ir',this)">Incident Response</button>
+        <button class="filter-btn" onclick="filterDocs('vendor',this)">Vendor Risk</button>
+      </div>
+      <span class="lib-count" id="lib-count">23 documents</span>
+    </div>
+
+    <!-- PHASE 1 -->
+    <div class="doc-phase">
+      <div class="doc-phase-header"><span class="phase-tag">Phase 1</span> Programme Foundation</div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left">
+          <div class="doc-icon md">&#128196;</div>
+          <div class="doc-meta">
+            <div class="doc-name">Programme Charter &amp; Scope Definition</div>
+            <div class="doc-desc">Objectives, scope, risk methodology, stakeholder register, programme roadmap</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">MD</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/tree/main/00_program_foundation" target="_blank">View Document →</a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left">
+          <div class="doc-icon md">&#127968;</div>
+          <div class="doc-meta">
+            <div class="doc-name">Company Profile &amp; Asset Inventory</div>
+            <div class="doc-desc">ResolvX background, asset classification, information types, cloud environments</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">MD</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/tree/main/00_program_foundation" target="_blank">View Document →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHASE 2 -->
+    <div class="doc-phase">
+      <div class="doc-phase-header"><span class="phase-tag">Phase 2</span> Risk &amp; Controls</div>
+
+      <div class="doc-card locked" data-cat="risk">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128200;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Risk Register</div>
+            <div class="doc-desc">25 risks across 5 domains : likelihood, impact, residual scores, heat map, treatment plan</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request - Risk Register" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card locked" data-cat="risk">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128196;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Risk Summary Report</div>
+            <div class="doc-desc"> Risk posture overview, top residual risks, FAIR analysis, risk treatment plan, board recommendations</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">PDF</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request - Risk Register" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="risk">
+        <div class="doc-card-left">
+          <div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta">
+            <div class="doc-name">Risk Methodology</div>
+            <div class="doc-desc">Description of the approach and techniques used for risk assessment and management</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/01_risk_management/formal_artifact/risk_methodology.pdf" target="_blank">View Document →</a></div>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="risk">
+        <div class="doc-card-left">
+          <div class="doc-icon xlsx">&#128203;</div>
+          <div class="doc-meta">
+            <div class="doc-name">ISO 27001:2022 Control Matrix</div>
+            <div class="doc-desc">Full Annex A mapping - 93 controls, implementation status, control owners</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/tree/main/02_compliance_framework" target="_blank">View Document →</a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="risk">
+        <div class="doc-card-left">
+          <div class="doc-icon xlsx">&#128203;</div>
+          <div class="doc-meta">
+            <div class="doc-name">SOC 2 TSC Criteria Mapping</div>
+            <div class="doc-desc">CC1 - CC9 mapped against implemented controls, evidence references, gaps noted</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/tree/main/02_compliance_framework" target="_blank">View Document →</a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="risk">
+        <div class="doc-card-left">
+          <div class="doc-icon xlsx">&#128202;</div>
+          <div class="doc-meta">
+            <div class="doc-name">NIST CSF 2.0 Function Mapping</div>
+            <div class="doc-desc">GV, ID, PR, DE, RS, RC functions mapped to ResolvX controls</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/tree/main/02_compliance_framework" target="_blank">View Document →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHASE 3 -->
+    <div class="doc-phase">
+      <div class="doc-phase-header"><span class="phase-tag">Phase 3</span> Policies &amp; Vendor Risk</div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Information Security Policy (POL-001)</div><div class="doc-desc">ISMS framework, objectives, risk appetite, control obligations - v1.0 Board Approved</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-001_information_security_policy.pdf" target="_blank">View Document →</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Acceptable Use Policy (POL-002)</div><div class="doc-desc">Device use, remote work, data handling, AUP enforcement and disciplinary framework</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-002_acceptable_use_policy.pdf" target="_blank">View Document →</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Access Control Policy (POL-003)</div><div class="doc-desc">RBAC, MFA requirements, JML lifecycle, privileged access management, review cadence</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-003_access_control_policy.pdf" target="_blank">View Document →</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Data Classification Policy (POL-004)</div><div class="doc-desc">4-tier scheme - Public, Internal, Confidential, Restricted - with handling rules per category</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-004_data_classification_policy.pdf" target="_blank">View Document →</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="vendor">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Vendor Management Policy (POL-005)</div><div class="doc-desc">TPRM framework, vendor tiering criteria, DPA requirements, SSO enforcement, review cadence</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-005_vendor_management_policy_tprm_framework.pdf" target="_blank">View Document →</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Privacy Programme Policy (POL-006)</div><div class="doc-desc">ROPA, DSR process, GDPR Art.30/33/34 obligations, controller vs processor distinctions</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-006_privacy_programme.pdf" target="_blank">View Document →</a></div>
+      </div>
+
+      <div class="doc-card locked" data-cat="vendor">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128200;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Vendor Register &amp; Tier 1 Assessments</div>
+            <div class="doc-desc">14 vendors · 6 Tier 1 fully assessed with scoring · residual risk ratings</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Vendor Assessments" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card locked" data-cat="vendor">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128194;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Sub-Processor Register</div>
+            <div class="doc-desc">10 sub-processors · transfer mechanisms, SCC status, data scope, DPA references</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Sub-Processor Register" target="_blank">Request Access</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHASE 4 -->
+    <div class="doc-phase">
+      <div class="doc-phase-header"><span class="phase-tag">Phase 4</span> Incident Response</div>
+
+      <div class="doc-card" data-cat="ir">
+        <div class="doc-card-left">
+          <div class="doc-icon docx">&#128680;</div>
+          <div class="doc-meta">
+            <div class="doc-name">Incident Response Plan (IRP)</div>
+            <div class="doc-desc">Full NIST 800-61 lifecycle with roles, severity model, containment, regulatory notifications</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">PDF</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/05_incident_response/formal_artifact/IR-PLAN-001.pdf" target="_blank">View Document →</a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="ir">
+        <div class="doc-card-left">
+          <div class="doc-icon md">&#127918;</div>
+          <div class="doc-meta">
+            <div class="doc-name">Operational Runbooks : Phishing, Ransomware, Data Breach</div>
+            <div class="doc-desc">3 playbooks covering detection through post-incident review and lessons learned</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">MD</span>
+          <span class="access-badge public">&#9679; Public</span>
+          <a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/tree/main/05_incident_response/ir_runbooks/" target="_blank">View Document →</a>
+        </div>
+      </div>
+
+      <div class="doc-card locked" data-cat="ir">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128203;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Tabletop Exercise Report : Operation Locked Gate</div>
+            <div class="doc-desc">Feb 2026 · 8 participants · ransomware scenario · findings and remediation tracking</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">PDF</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Tabletop Exercise Report" target="_blank">Request Access</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHASE 5 -->
+    <div class="doc-phase">
+      <div class="doc-phase-header"><span class="phase-tag">Phase 5</span> Audit Readiness</div>
+
+      <div class="doc-card locked" data-cat="audit">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128203;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Internal Audit Checklist </div>
+            <div class="doc-desc">31 ISO 27001 controls + 17 SOC 2 TSC criteria tested - detailed test results and evidence reviewed</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Internal Audit Checklist" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card locked" data-cat="audit">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128196;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Internal Audit Report </div>
+            <div class="doc-desc">Q1 2026 · Satisfactory verdict · 0 major NCs · 5 minor NCs · 3 observations with root cause</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">PDF</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Audit Report" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card locked" data-cat="audit">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#127919;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">SOC 2 Type II Readiness Assessment </div>
+            <div class="doc-desc">88% readiness · Substantially Ready · gap details · observation period target Aug 2026</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">PDF</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — SOC 2 Readiness Assessment" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card locked" data-cat="audit">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128200;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Corrective Action Plan </div>
+            <div class="doc-desc">8 actions · root cause, owner, due date, verification method · Q2 2026 remediation target</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Corrective Action Plan" target="_blank">Request Access</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHASE 6 -->
+    <div class="doc-phase">
+      <div class="doc-phase-header"><span class="phase-tag">Phase 6</span> Trust Center &amp; Dashboard</div>
+
+      <div class="doc-card locked" data-cat="audit">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128202;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">Compliance Dashboard </div>
+            <div class="doc-desc">5-sheet internal CISO dashboard · programme status, risk overview, vendor, CAP, 2026 roadmap</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Compliance Dashboard" target="_blank">Request Access</a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-cat="audit">
+        <div class="doc-card-left">
+          <div class="doc-icon html">&#127760;</div>
+          <div class="doc-meta">
+            <div class="doc-name">Trust Center </div>
+            <div class="doc-desc">Public-facing security posture, compliance status, document library, vendor security</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="access-badge public">&#9679; Public</span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- SECURITY POSTURE -->
 <section id="posture">
   <div class="container">
-    <div class="last-updated"><span class="dot"></span> Last updated: March 2026</div>
+    
     <p class="section-label">Security Posture</p>
     <h2 class="section-title">How we protect your data</h2>
     <p class="section-sub">Our security programme is built across six phases, grounded in ISO 27001:2022, NIST CSF 2.0, and SOC 2 Trust Service Criteria.</p>
@@ -524,9 +1042,9 @@
       <tbody>
         <tr>
           <td>ISO/IEC 27001:2022</td>
-          <td>Full ISMS — all systems, data, and personnel</td>
+          <td>Full ISMS. Across all systems, data, and personnel</td>
           <td><span class="badge green">Aligned</span></td>
-          <td>Internal audit Q1 2026 · 0 major NCs</td>
+          <td>Internal audit Q1 2026 · <br>0 major NCs</td>
           <td>Mar 2026</td>
         </tr>
         <tr>
@@ -551,14 +1069,14 @@
           <td>Q4 2025</td>
         </tr>
         <tr>
-          <td>NIST SP 800-61 Rev 2</td>
+          <td>NIST SP 800 - 61 Rev 2</td>
           <td>Incident response lifecycle</td>
           <td><span class="badge green">Implemented</span></td>
           <td>IR plan, 3 runbooks, tabletop Feb 2026</td>
           <td>Feb 2026</td>
         </tr>
         <tr>
-          <td>NIST SP 800-53B (Moderate Baseline)</td>
+          <td>NIST SP 800 - 53B (Moderate Baseline)</td>
           <td>Control selection reference</td>
           <td><span class="badge blue">Reference</span></td>
           <td>Used as supplementary control baseline</td>
@@ -569,13 +1087,13 @@
 
     <div class="controls-grid">
       <div class="control-block">
-        <h3>ISO 27001:2022 — Key Controls <span class="count">22 Conformant</span></h3>
+        <h3>ISO 27001:2022 - Key Controls <span class="count">22 Conformant</span></h3>
         <div class="control-list">
           <div class="control-item"><span class="name">A5.1 Information Security Policies</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A5.15 Access Control</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A5.16 Identity Management</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A5.19 Information Security in Supplier Relationships</span><span class="tick">✓</span></div>
-          <div class="control-item"><span class="name">A5.24-A5.27 Incident Response Lifecycle</span><span class="tick">✓</span></div>
+          <div class="control-item"><span class="name">A5.24 - A5.27 Incident Response Lifecycle</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A5.34 Privacy and Protection of PII</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A8.5 Secure Authentication (MFA)</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A8.15 Logging / A8.16 Monitoring</span><span class="tick">✓</span></div>
@@ -584,7 +1102,7 @@
         </div>
       </div>
       <div class="control-block">
-        <h3>SOC 2 TSC — Ready Families <span class="count">7 / 9 Full</span></h3>
+        <h3>SOC 2 TSC - Ready Families <span class="count">7 / 9 Full</span></h3>
         <div class="control-list">
           <div class="control-item"><span class="name">CC1 Control Environment</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC3 Risk Assessment</span><span class="tick">✓</span></div>
@@ -593,8 +1111,8 @@
           <div class="control-item"><span class="name">CC6 Logical and Physical Access</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC7 System Operations</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC8 Change Management</span><span class="tick">✓</span></div>
-          <div class="control-item"><span class="name">CC9 Risk Mitigation — Vendor</span><span class="tick">✓</span></div>
-          <div class="control-item"><span class="name">CC2 Communication &amp; Information</span><span class="badge amber" style="font-size:0.7rem;">Training gap — Q2 2026</span></div>
+          <div class="control-item"><span class="name">CC9 Risk Mitigation - Vendor</span><span class="tick">✓</span></div>
+          <div class="control-item"><span class="name">CC2 Communication &amp; Information</span><span class="badge amber" style="font-size:0.7rem;">Training gap - Q2 2026</span></div>
         </div>
       </div>
     </div>
@@ -622,7 +1140,7 @@
         <h3><span class="icon">🔒</span> Encryption</h3>
         <ul>
           <li>AES-256 encryption at rest across all production databases and S3 buckets</li>
-          <li>TLS 1.3 enforced on all public endpoints — no legacy protocols permitted</li>
+          <li>TLS 1.3 enforced on all public endpoints - no legacy protocols permitted</li>
           <li>AWS KMS for encryption key management with defined key rotation</li>
           <li>1Password zero-knowledge architecture for credential storage</li>
         </ul>
@@ -639,7 +1157,7 @@
       <div class="practice-card">
         <h3><span class="icon">👥</span> Access to Data</h3>
         <ul>
-          <li>Strict need-to-know access — no employee has broad access to client data</li>
+          <li>Strict need-to-know access - no employee has broad access to client data</li>
           <li>All access to production data requires justification and time-limited approval</li>
           <li>Quarterly access reviews by system owners; deprovisioning SLA of 48 hours</li>
           <li>All access is logged and monitored via CloudTrail and Okta audit logs</li>
@@ -651,7 +1169,7 @@
           <li>ResolvX acts as data processor for client financial data; data controller for employee data</li>
           <li>Data Processing Agreements (DPAs) executed with all clients and data-processing vendors</li>
           <li>Record of Processing Activities (ROPA) maintained under GDPR Article 30</li>
-          <li>72-hour breach notification to supervisory authority (Irish DPC) — documented process</li>
+          <li>72-hour breach notification to supervisory authority (Irish DPC) - documented process</li>
         </ul>
       </div>
       <div class="practice-card">
@@ -712,22 +1230,22 @@
             </thead>
             <tbody>
               <tr style="border-bottom: 1px solid var(--dgray);">
-                <td style="padding: 10px 12px; font-weight: 600; color: #991B1B;">P1 — Critical</td>
+                <td style="padding: 10px 12px; font-weight: 600; color: #991B1B;">P1 : Critical</td>
                 <td style="padding: 10px 12px;">15 minutes</td>
                 <td style="padding: 10px 12px;">Within 24 hours</td>
               </tr>
               <tr style="border-bottom: 1px solid var(--dgray);">
-                <td style="padding: 10px 12px; font-weight: 600; color: #B45309;">P2 — High</td>
+                <td style="padding: 10px 12px; font-weight: 600; color: #B45309;">P2 : High</td>
                 <td style="padding: 10px 12px;">1 hour</td>
                 <td style="padding: 10px 12px;">Within 48 hours</td>
               </tr>
               <tr style="border-bottom: 1px solid var(--dgray);">
-                <td style="padding: 10px 12px; font-weight: 600; color: #1D4ED8;">P3 — Medium</td>
+                <td style="padding: 10px 12px; font-weight: 600; color: #1D4ED8;">P3 : Medium</td>
                 <td style="padding: 10px 12px;">4 hours</td>
                 <td style="padding: 10px 12px;">As required</td>
               </tr>
               <tr>
-                <td style="padding: 10px 12px; font-weight: 600; color: var(--muted);">P4 — Low</td>
+                <td style="padding: 10px 12px; font-weight: 600; color: var(--muted);">P4 : Low</td>
                 <td style="padding: 10px 12px;">Next business day</td>
                 <td style="padding: 10px 12px;">N/A</td>
               </tr>
@@ -767,7 +1285,7 @@
           <td><span class="badge navy">Tier 1</span></td>
           <td>SOC 2 Type II · ISO 27001</td>
           <td><span class="badge green">Active</span></td>
-          <td>All production data (EU regions)</td>
+          <td>All production data <br>(EU regions)</td>
         </tr>
         <tr>
           <td>Okta</td>
@@ -775,7 +1293,7 @@
           <td><span class="badge navy">Tier 1</span></td>
           <td>SOC 2 Type II</td>
           <td><span class="badge green">Active</span></td>
-          <td>Employee identity (no client PII)</td>
+          <td>Employee identity  <br>(no client PII)</td>
         </tr>
         <tr>
           <td>GitHub</td>
@@ -783,15 +1301,15 @@
           <td><span class="badge navy">Tier 1</span></td>
           <td>SOC 2 Type II · ISO 27001 (Microsoft)</td>
           <td><span class="badge green">Active</span></td>
-          <td>Source code only — no client data</td>
+          <td>Source code only <br>(no client data)</td>
         </tr>
         <tr>
           <td>Google Workspace</td>
-          <td>Email &amp; Collaboration (EU residency)</td>
+          <td>Email &amp; Collaboration <br>(EU residency)</td>
           <td><span class="badge navy">Tier 1</span></td>
           <td>SOC 2 Type II · ISO 27001</td>
           <td><span class="badge green">Active</span></td>
-          <td>Internal comms (EU data residency)</td>
+          <td>Internal comms <br>(EU data residency)</td>
         </tr>
         <tr>
           <td>Datadog</td>
@@ -803,11 +1321,11 @@
         </tr>
         <tr>
           <td>Stripe</td>
-          <td>Payment Processing (billing only)</td>
+          <td>Payment Processing <br>(billing only)</td>
           <td><span class="badge blue">Tier 2</span></td>
-          <td>PCI DSS Level 1 · SOC 2 Type II</td>
+          <td>PCI DSS Lvl 1 · SOC 2 Type II</td>
           <td><span class="badge green">Active</span></td>
-          <td>ResolvX billing only — no client data</td>
+          <td>ResolvX billing only <br>(no client data)</td>
         </tr>
       </tbody>
     </table>
@@ -826,11 +1344,11 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           security@resolvx.io
         </a>
-        <a href="#" class="contact-btn secondary">
+        <a class="contact-btn secondary">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           Request Security Documentation
         </a>
-        <a href="#" class="contact-btn secondary">
+        <a class="contact-btn secondary">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           Schedule a Security Review
         </a>
@@ -843,16 +1361,36 @@
 <footer>
   <div>
     <strong>ResolvX</strong> · Security &amp; Trust Center ·
-    <a href="mailto:security@resolvx.io">security@resolvx.io</a>
+    <a>security@resolvx.io</a>
   </div>
   <div style="display: flex; gap: 2rem;">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">Cookie Policy</a>
-    <a href="#">Vulnerability Disclosure</a>
+    <a>Privacy Policy</a>
+    <a>Terms of Service</a>
+    <a>Cookie Policy</a>
+    <a>Vulnerability Disclosure</a>
   </div>
   <div>Last updated: March 2026</div>
 </footer>
+
+<script>
+  /* C2 filter functionality */
+  function filterDocs(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cards = document.querySelectorAll('.doc-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const show = cat === 'all' || card.dataset.cat === cat;
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visible++;
+    });
+    document.querySelectorAll('.doc-phase').forEach(phase => {
+      const hasVisible = [...phase.querySelectorAll('.doc-card')].some(c => c.style.display !== 'none');
+      phase.style.display = hasVisible ? 'block' : 'none';
+    });
+    document.getElementById('lib-count').textContent = visible + ' document' + (visible !== 1 ? 's' : '');
+  }
+</script>
 
 </body>
 </html>
