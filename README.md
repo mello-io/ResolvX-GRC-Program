@@ -1,7 +1,7 @@
-# ResolvX — GRC Compliance & Audit Readiness Program
+# ResolvX - GRC Compliance & Audit Readiness Program
 
-> **Program Owner:** Derick Dmello — GRC Lead, Risk & Compliance, ResolvX  
-> **Status:** 🔵 In Progress — Phase 6: Trust Center  
+> **Program Owner:** Derick Dmello - GRC Lead, Risk & Compliance, ResolvX  
+> **Status:** ✅ Completed - Phase 6: Trust Center  
 > **Frameworks:** ISO 27001:2022 · SOC 2 Type II · NIST CSF 2.0 · PCI-DSS v4.0  
 > **Last Updated:** March 2026
 
@@ -20,7 +20,7 @@
 
 ## 🎯 Program Mission
 
-This repository documents the full lifecycle of ResolvX's internal GRC program — from baseline gap assessment through control implementation, audit readiness, and the establishment of a public-facing Trust Center. It is designed to demonstrate what a mature, program-owner-level GRC initiative looks like in practice.
+This repository documents the full lifecycle of ResolvX's internal GRC program from baseline gap assessment through control implementation, audit readiness, and the establishment of a public-facing Trust Center. It is designed to demonstrate what a mature, program-owner-level GRC initiative looks like in practice.
 
 ---
 
@@ -30,7 +30,7 @@ This repository documents the full lifecycle of ResolvX's internal GRC program �
 resolvx-grc-program/
 │
 ├── 00_program_foundation/
-│   ├── objectives_scope_goals.md            # Living document — program charter
+│   ├── objectives_scope_goals.md            # Living document - program charter
 │   ├── program_roadmap.md                   # Phased roadmap with milestones
 │   ├── company_profile.md                   # ResolvX background & asset inventory
 │   ├── stakeholder_register.md              # Roles, owners, accountabilities
@@ -103,7 +103,7 @@ resolvx-grc-program/
 | **Phase 3** | Policies & Vendor Risk — Policy library, vendor assessments | ✅ Completed |
 | **Phase 4** | Incident Response — IR plan, runbooks, tabletop simulation | ✅ Completed |
 | **Phase 5** | Audit Readiness — Internal audit, evidence collection, CAP | ✅ Completed |
-| **Phase 6** | Trust Center — Dashboard, public trust narrative, certifications | 🔵 In Progress |
+| **Phase 6** | Trust Center — Dashboard, public trust narrative, certifications | ✅ Completed |
 
 ---
 
