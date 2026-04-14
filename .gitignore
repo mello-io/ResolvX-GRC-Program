@@ -1,0 +1,12 @@
+# Claude Code memory
+.claude/
+
+# Local Word documents (kept on-prem only)
+*.docx
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
