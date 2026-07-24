@@ -1,8 +1,11 @@
 # Claude Code memory
 .claude/
 
-# Local Word documents (kept on-prem only)
+# Local Word documents
 *.docx
+
+# Build/planning materials
+build/
 
 # macOS
 .DS_Store
