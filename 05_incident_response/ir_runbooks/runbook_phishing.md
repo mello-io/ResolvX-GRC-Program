@@ -1,6 +1,6 @@
 # Runbook: Phishing Incident Response
 
-**Runbook ID:** IR-RB-001 | **Version:** 1.0 | **Owner:** GRC Lead
+**Runbook ID:** IR-RB-001 | **Version:** 1.1 | **Owner:** GRC Lead
 **Incident Category:** Social Engineering - Phishing / Spear Phishing / BEC
 **Severity Range:** P2 - P4 (escalates to P1 if credentials confirmed compromised and client data accessed)
 
@@ -142,7 +142,7 @@ Required for: P1/P2; any confirmed credential compromise; any BEC or financial f
 
 ### 7.3 Client Notification
 
-Required if: phishing email was sent from a compromised ResolvX email account to clients; or if client data was accessed following credential compromise. Refer to POL-006 Section A.9 and IR-PLAN-001 Section 5.2.
+Required if: phishing email was sent from a compromised ResolvX email account to clients; or if client data was accessed following credential compromise. Refer to POL-016 (Breach Management Policy) for the notification decision framework, and IR-PLAN-001 Section 5.2.
 
 ---
 
@@ -169,4 +169,4 @@ Required if: phishing email was sent from a compromised ResolvX email account to
 
 ---
 
-*ResolvX GRC Program - IR-RB-001 - v1.0 - 2026 - Internal - Restricted*
+*ResolvX GRC Program - IR-RB-001 - v1.1 - 2026-07-31 - Internal - Restricted*

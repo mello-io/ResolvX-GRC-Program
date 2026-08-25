@@ -1,6 +1,6 @@
-# 🗺️ ResolvX — GRC Program Roadmap
+# 🗺️ ResolvX: GRC Program Roadmap
 
-> **Program:** GRC Compliance & Audit Readiness | **Horizon:** 2026 – 2027 | **Version:** 1.0
+> **Program:** GRC Compliance & Audit Readiness | **Horizon:** 2026 – 2027 | **Version:** 1.1
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Current Phase](https://img.shields.io/badge/Status-All%20Phases%20Complete-brightgreen?style=flat-square)
@@ -11,7 +11,7 @@
 
 ## Program Summary
 
-The ResolvX GRC program is structured across **six sequential phases**. Each phase builds on the previous — creating a compounding foundation that culminates in a mature, audit-ready compliance program with a public-facing Trust Center. Every phase produces tangible, versioned deliverables.
+The ResolvX GRC program is structured across **six sequential phases**. Each phase builds on the previous, creating a compounding foundation that culminates in a mature, audit-ready compliance program with a public-facing Trust Center. Every phase produces tangible, versioned deliverables.
 
 ---
 
@@ -30,7 +30,7 @@ The ResolvX GRC program is structured across **six sequential phases**. Each pha
 
 ## Phase Detail
 
-### 🔵 Phase 1 — Foundation
+### 🔵 Phase 1: Foundation
 > *Month 1–2 | Status: ✅ Complete*
 
 Establish the structural foundation for the entire GRC program. Define what ResolvX is, what it protects, who owns what, and how the program operates.
@@ -44,13 +44,13 @@ Establish the structural foundation for the entire GRC program. Define what Reso
 
 ---
 
-### 🟣 Phase 2 — Risk & Controls
+### 🟣 Phase 2: Risk & Controls
 > *Month 2–4 | Status: ✅ Complete*
 
 Build the risk management foundation. Identify, score, and prioritize key security risks. Map controls to ISO 27001, SOC 2, and NIST CSF. Identify gaps.
 
 **Deliverables**
-- [x] Risk register (Excel) — 15+ risks, scoring, heat map, mitigation owners
+- [x] Risk register (Excel): 15+ risks, scoring, heat map, mitigation owners
 - [x] Risk methodology document
 - [x] ISO 27001:2022 Annex A control matrix (93 controls)
 - [x] SOC 2 TSC criteria mapping (CC1–CC9)
@@ -59,61 +59,56 @@ Build the risk management foundation. Identify, score, and prioritize key securi
 
 ---
 
-### 🟤 Phase 3 — Policies & Vendor Risk
+### 🟤 Phase 3: Policies & Vendor Risk
 > *Month 4–6 | Status: ✅ Complete*
 
 Translate framework requirements into actionable policies. Assess the security posture of key third-party vendors who handle ResolvX data or infrastructure.
 
 **Deliverables**
-- [x] Information Security Policy
-- [x] Access Control Policy
-- [x] Incident Response Policy
-- [x] Data Classification Policy
-- [x] Vendor Management Policy
-- [x] Acceptable Use Policy
+- [x] Full policy library: 26 policies (POL-001–026), covering information security, access control, incident/breach/risk management, logging & monitoring, BCP/DR, backup & recovery, patch management, asset management, passwords, change management, root cause analysis, secure SDLC, DLP, data destruction, cryptography, cyber security, HR security, physical & environmental security, clean desk, and policy exception governance
 - [x] Vendor assessment questionnaire (scored)
-- [x] Vendor risk register — Tier 1 assessments (AWS, Stripe, Okta)
+- [x] Vendor risk register: 6/6 Tier 1 vendors assessed (AWS, Okta, GitHub, Google Workspace, Jamf, 1Password)
 
 ---
 
-### 🟠 Phase 4 — Incident Response
+### 🟠 Phase 4: Incident Response
 > *Month 6–8 | Status: ✅ Complete*
 
 Design, document, and test ResolvX's incident response capability. Aligned to ISO 27035 and NIST SP 800-61.
 
 **Deliverables**
 - [x] Incident Response Plan (full lifecycle)
-- [x] Runbook — Phishing
-- [x] Runbook — Ransomware
-- [x] Runbook — Data Breach
+- [x] Runbook: Phishing
+- [x] Runbook: Ransomware
+- [x] Runbook: Data Breach
 - [x] Tabletop simulation scenario and facilitation guide
 - [x] Post-simulation report with findings
 - [x] Incident log template
 
 ---
 
-### 🔴 Phase 5 — Audit Readiness
+### 🔴 Phase 5: Audit Readiness
 > *Month 8–11 | Status: ✅ Complete*
 
 Perform a structured internal audit across all controls. Collect evidence, identify non-conformities, and produce a corrective action plan. Simulate the SOC 2 Type II pre-audit experience.
 
 **Deliverables**
 - [x] Internal audit checklist (control, evidence, finding, severity, action)
-- [x] Evidence library — organized by framework
-- [x] Internal audit report — findings and ratings
+- [x] Evidence library: organized by framework
+- [x] Internal audit report: findings and ratings
 - [x] Corrective Action Plan (CAP) with owners and target dates
 - [x] SOC 2 Type II readiness assessment report
 
 ---
 
-### 🟢 Phase 6 — Trust Center
+### 🟢 Phase 6: Trust Center
 > *Month 11–14 | Status: ✅ Complete*
 
 Synthesize the entire program into a public-facing Trust Center. Demonstrates ResolvX's security and compliance posture to enterprise prospects, clients, and auditors.
 
 **Deliverables**
 - [x] Compliance dashboard (control coverage, risk trends, KRIs/KPIs)
-- [x] Trust Center overview — public facing
+- [x] Trust Center overview: public facing
 - [x] Security controls summary
 - [x] Privacy and data handling overview
 - [x] Certifications and audit reports index
@@ -146,4 +141,4 @@ Synthesize the entire program into a public-facing Trust Center. Demonstrates Re
 
 ---
 
-*ResolvX GRC Program — Internal Use Only — v1.0 — 2026*
+*ResolvX GRC Program, Internal Use Only, v1.1, 2026*

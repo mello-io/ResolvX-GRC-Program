@@ -1,6 +1,6 @@
 # Runbook: Data Breach Incident Response
 
-**Runbook ID:** IR-RB-003 | **Version:** 1.0 | **Owner:** GRC Lead / Legal
+**Runbook ID:** IR-RB-003 | **Version:** 1.1 | **Owner:** GRC Lead / Legal
 **Incident Category:** Data Breach - Unauthorised Access, Exfiltration, or Accidental Disclosure
 **Severity Range:** P1 - P3 depending on data classification, volume, and affected parties
 
@@ -146,6 +146,16 @@ Content required: plain language description; likely consequences; contact point
 
 Legal leads on drafting and timing. Coordinate with client (controller) if ResolvX is acting as processor.
 
+### 5.5 US Notification Obligations
+
+ResolvX's regulatory exposure is not EU-only — POL-016 (Breach Management Policy) formalises a parallel US framework alongside GDPR. Where affected individuals are US residents, assess:
+
+- **NYDFS (23 NYCRR 500)** — if any affected system falls within NYDFS scope, notification to the NY Department of Financial Services is required within 72 hours of determining a reportable event occurred — a separate clock from the GDPR 72-hour trigger, which starts from awareness, not determination
+- **CCPA/CPRA (California)** — notification to affected California residents "without unreasonable delay," and to the California Attorney General if 500+ CA residents are affected
+- Other US state breach notification laws may apply depending on the residency of affected individuals — Legal maintains the current state-by-state matrix
+
+Do not assume GDPR notification satisfies US obligations, or vice versa — they run on independent clocks with independent content requirements. Legal determines applicability jointly with the GRC Lead as part of the Section 4.2 risk assessment.
+
 ---
 
 ## 6. Eradication
@@ -199,7 +209,7 @@ Legal leads on drafting and timing. Coordinate with client (controller) if Resol
 
 - Lessons learned meeting within 5 business days (P1/P2); 10 business days (P3)
 - Post-incident report required for P1/P2
-- Update breach register (POL-006 Part A.9)
+- Update breach register (POL-016, Breach Management Policy)
 - Update risk register with revised data breach risk rating
 - Review and if necessary strengthen data handling controls: access restrictions, DLP, S3 bucket policies, secrets management
 - If vendor involved: update vendor risk register and consider re-assessment
@@ -219,4 +229,4 @@ Legal leads on drafting and timing. Coordinate with client (controller) if Resol
 
 ---
 
-*ResolvX GRC Program - IR-RB-003 - v1.0 - 2026 - Internal - Restricted*
+*ResolvX GRC Program - IR-RB-003 - v1.1 - 2026-07-31 - Internal - Restricted*

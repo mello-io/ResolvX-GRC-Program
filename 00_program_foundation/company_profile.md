@@ -1,6 +1,6 @@
-# 🏢 ResolvX — Company Profile & Asset Inventory
+# 🏢 ResolvX: Company Profile & Asset Inventory
 
-> **Program:** GRC Compliance & Audit Readiness | **Phase:** 1 - Foundation | **Version:** 1.0
+> **Program:** GRC Compliance & Audit Readiness | **Phase:** 1 - Foundation | **Version:** 1.1
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Phase](https://img.shields.io/badge/Phase-1%20Foundation-blue?style=flat-square)
@@ -28,9 +28,9 @@
 
 ### What ResolvX Does
 
-ResolvX provides a **cloud-native, AI-powered dispute management platform** for financial institutions, payment processors, insurance providers, and e-commerce enterprises. The platform centralizes and automates the entire dispute lifecycle — from initial complaint intake through investigation, evidence collection, regulatory reporting, and case resolution.
+ResolvX provides a **cloud-native, AI-powered dispute management platform** for financial institutions, payment processors, insurance providers, and e-commerce enterprises. The platform centralizes and automates the entire dispute lifecycle, from initial complaint intake through investigation, evidence collection, regulatory reporting, and case resolution.
 
-Think of it like a hub for financial disputes — banks, credit unions, fintechs, and payment processors of any size plug into ResolvX and manage all dispute workflows through a single, compliance-aware interface, regardless of their vertical or internal infrastructure.
+Think of it like a hub for financial disputes: banks, credit unions, fintechs, and payment processors of any size plug into ResolvX and manage all dispute workflows through a single, compliance-aware interface, regardless of their vertical or internal infrastructure.
 
 ### Platform Capabilities
 
@@ -99,14 +99,20 @@ Think of it like a hub for financial disputes — banks, credit unions, fintechs
 
 | Vendor | Service | Data Access | Tier |
 |---|---|---|---|
-| AWS | Cloud infrastructure | All data — hosting | 🔴 Tier 1 — Critical |
-| Stripe | Payment processing | Financial / Card data | 🔴 Tier 1 — Critical |
-| Okta | Identity & SSO | Auth data | 🔴 Tier 1 — Critical |
-| SendGrid | Transactional email | PII (email) | 🟠 Tier 2 — High |
-| Datadog | Monitoring & logging | Log data / PII risk | 🟠 Tier 2 — High |
-| GitHub | Source code management | Code / secrets risk | 🟠 Tier 2 — High |
-| Zendesk | Customer support | PII, case data | 🟠 Tier 2 — High |
-| Notion | Knowledge base | Internal docs | 🟡 Tier 3 — Medium |
+| AWS | Cloud infrastructure (IaaS) | All system data (hosting provider) | 🔴 Tier 1: Critical |
+| Okta | Identity & Access Management (SSO, MFA) | Employee identity & auth data | 🔴 Tier 1: Critical |
+| GitHub (Microsoft) | Source code management, CI/CD | Source code, secrets risk | 🔴 Tier 1: Critical |
+| Google Workspace | Email, Docs, Drive, Meet | Internal comms, some client comms | 🔴 Tier 1: Critical |
+| Jamf | Mobile device management (endpoint) | Device inventory & compliance data | 🔴 Tier 1: Critical |
+| 1Password | Enterprise credential management | Credential metadata (not plaintext) | 🔴 Tier 1: Critical |
+| Slack (Salesforce) | Internal team messaging | Internal comms (Confidential/Internal) | 🟠 Tier 2: High |
+| Jira / Confluence (Atlassian) | Issue tracking, internal wiki | Internal project data, some security docs | 🟠 Tier 2: High |
+| Datadog | Monitoring & observability | System logs, performance metrics | 🟠 Tier 2: High |
+| Snyk | SAST/SCA vulnerability scanning | Source code references, vulnerability data | 🟠 Tier 2: High |
+| Rippling | HRIS & payroll processing | Employee PII, payroll, benefits data | 🟠 Tier 2: High |
+| Stripe | Payment processing (subscription billing) | Payment card data (PCI DSS scope) | 🟠 Tier 2: High |
+| Zoom | Video conferencing | Meeting metadata, limited comms content | 🟡 Tier 3: Medium |
+| Notion | Internal knowledge base | Internal documentation (Internal tier) | 🟡 Tier 3: Medium |
 
 ---
 
@@ -142,4 +148,4 @@ Think of it like a hub for financial disputes — banks, credit unions, fintechs
 
 ---
 
-*ResolvX GRC Program — Internal Use Only — v1.0 — 2026*
+*ResolvX GRC Program, Internal Use Only, v1.1, 2026*

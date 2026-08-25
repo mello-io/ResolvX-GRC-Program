@@ -1,6 +1,6 @@
-# 📊 ResolvX — Information Security Risk Summary Report
+# 📊 ResolvX: Information Security Risk Summary Report
 
-> **Program:** GRC Compliance & Audit Readiness | **Phase:** 2 — Risk & Controls | **Version:** 1.0
+> **Program:** GRC Compliance & Audit Readiness | **Phase:** 2 (Risk & Controls) | **Version:** 2.0
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Phase](https://img.shields.io/badge/Phase-2%20Risk%20%26%20Controls-purple?style=flat-square)
@@ -12,252 +12,183 @@
 
 ## Executive Summary
 
-ResolvX has completed its inaugural formal information security risk assessment as part of Phase 2 of the GRC Compliance & Audit Readiness Programme. This report presents the findings to organisational leadership, providing a clear view of ResolvX's current risk posture, the financial exposure associated with top risks, and the remediation priorities required to achieve target compliance certifications and protect client trust.
+This report presents ResolvX's current information security risk posture, updated July 2026 following delivery of the full 26-policy suite (POL-001–026), re-scoring of 19 of 25 risks against the controls those policies formalise, and a re-run internal audit. The original baseline assessment (Phase 2, early 2026) is preserved in Document Control below as historical record and this version reflects where the programme actually stands today.
 
-**25 risks were identified and assessed** across five categories: Cyber Threat, Cloud & Infrastructure, Vendor & Third-Party, Compliance & Regulatory, and Human & Operational. The assessment was conducted using the NIST SP 800-30 Rev. 1 methodology for qualitative scoring and the FAIR (Factor Analysis of Information Risk) model for financial quantification of high and critical risks.
+**25 risks remain under active management** across five categories: Cyber Threat, Cloud & Infrastructure, Vendor & Third-Party, Compliance & Regulatory, and Human & Operational.
 
 ### Key Findings at a Glance
 
 | Metric | Finding |
 |---|---|
 | **Total risks assessed** | 25 across 5 categories |
-| **Critical risks (residual)** | 0 — all critical inherent risks reduced through controls |
-| **High risks (residual)** | 8 requiring treatment plans within 30 days |
-| **Moderate risks (residual)** | 11 requiring treatment plans within 90 days |
-| **Low / Very Low risks (residual)** | 6 — accepted or monitored |
-| **Total FAIR ALE exposure** | $1.83M – $6.52M annualised across quantified risks |
-| **Top single risk ALE** | RSK-001 Ransomware — $350K – $1.2M/year |
-| **Risks with treatment plans** | 25 / 25 — all risks have documented treatment decisions |
-| **Overall risk trajectory** | ⬇️ Improving — controls are reducing residual scores across all categories |
+| **Critical risks (residual)** | 0 |
+| **High risks (residual)** | 0, down from 8 at baseline |
+| **Moderate risks (residual)** | 7, down from 11 |
+| **Low risks (residual)** | 8 |
+| **Very Low risks (residual)** | 10; up from 1, including 10 risks now formally Mitigated |
+| **Risks fully Mitigated** | 10 of 25 |
+| **Risks with treatment plans** | 25 / 25: all risks have documented treatment decisions |
+| **Overall risk trajectory** | ⬇️ Improving: no risk sits above Moderate residual for the first time in the programme's history |
 
-> **Assessment Date:** 2026 | **Next Review:** Q2 2026 | **Risk Owner:** GRC Lead
+> **Assessment Date:** July 2026 | **Next Review:** December 2026 | **Risk Owner:** GRC Lead
 
 ---
 
 ## 1. Risk Posture Overview
 
-### 1.1 Inherent vs Residual Risk Distribution
+### 1.1 Residual Risk Distribution: Then and Now
 
-The following table shows how ResolvX's current controls are shifting risk levels from inherent (before controls) to residual (after controls). This movement is the primary indicator of control programme effectiveness.
-
-| Risk Level | Inherent Count | Residual Count | Delta |
+| Risk Level | Baseline (Early 2026) | Current (July 2026) | Delta |
 |---|---|---|---|
-| 🔴 **Critical** (20–25) | 8 | 0 | ⬇️ -8 |
-| 🔴 **High** (12–19) | 10 | 8 | ⬇️ -2 |
-| 🟠 **Moderate** (7–11) | 5 | 11 | ↑ +6 (risk correctly categorised after control credit) |
-| 🟡 **Low** (4–6) | 2 | 5 | ↑ +3 |
-| 🟢 **Very Low** (1–3) | 0 | 1 | ↑ +1 |
+| 🔴 **Critical** (20–25) | 0 | 0 | . |
+| 🔴 **High** (12–19) | 8 | 0 | ⬇️ -8 |
+| 🟠 **Moderate** (7–11) | 11 | 7 | ⬇️ -4 |
+| 🟡 **Low** (4–6) | 5 | 8 | ⬆️ +3 |
+| 🟢 **Very Low** (1–3) | 1 | 10 | ⬆️ +9 |
 
-The shift of 8 Critical inherent risks to High or Moderate residual demonstrates that existing controls - Okta MFA, AWS GuardDuty, EDR, multi-AZ architecture, and GitHub branch protection - are providing meaningful risk reduction. However, **8 High residual risks remain** and represent the programme's immediate action priority.
+Every one of the original 8 High residual risks has moved to Moderate or lower. Ten risks are now formally Mitigated (closed via a named policy, a tested control, or both), not just reclassified on paper.
 
 ### 1.2 Risk Distribution by Category
 
-| Category | Risks | Highest Residual Level | Primary Driver |
+| Category | Risks | Highest Residual Level | Primary Driver (Current) |
 |---|---|---|---|
-| 🛡️ **Cyber Threat** | 5 | 🔴 High | Ransomware, phishing, API exploitation |
-| ☁️ **Cloud & Infrastructure** | 5 | 🔴 High | IAM over-privilege, S3 misconfiguration |
-| 🔗 **Vendor & Third-Party** | 5 | 🟠 Moderate | No formal TPRM programme |
-| 📋 **Compliance & Regulatory** | 5 | 🔴 High | SOC 2 Type II not yet certified |
-| 👥 **Human & Operational** | 5 | 🟠 Moderate | Offboarding gaps, BCP absence |
+| 🛡️ **Cyber Threat** | 5 | 🟠 Moderate | Ransomware, API exploitation, supply chain; all formally governed, controls maturing |
+| ☁️ **Cloud & Infrastructure** | 5 | 🟠 Moderate | S3 misconfiguration, IAM over-privilege; CIS baseline enforced, named tooling gaps remain |
+| 🔗 **Vendor & Third-Party** | 5 | 🟠 Moderate | AWS concentration and Stripe/PCI scope; deliberately deferred, not overlooked |
+| 📋 **Compliance & Regulatory** | 5 | 🟢 Very Low | SOC 2 now FULLY READY, GDPR framework formalised via POL-006/POL-016 |
+| 👥 **Human & Operational** | 5 | 🟢 Very Low | Offboarding, change management, key-person risk all Mitigated |
 
 ---
 
-## 2. Top 8 High Residual Risks
+## 2. Top Moderate Residual Risks
 
-These risks require formal treatment plans and active remediation. Each is assigned a named control owner and target completion date.
+With no risk remaining above Moderate, these seven represent the programme's current highest-priority attention, not urgent escalations, but the risks worth continued investment.
 
-### 🔴 RSK-001 — Ransomware Attack
+### 🟠 RSK-001: Ransomware Attack
 | Field | Detail |
 |---|---|
-| **Residual Score** | 12 (Likelihood 3 × Impact 4) |
-| **Threat Source** | Organised cybercriminal group (RaaS) |
-| **Core Vulnerability** | No immutable backup vault; tabletop simulation not conducted |
-| **FAIR ALE** | $350,000 - $1,200,000 / year |
+| **Residual Score** | 8 (Moderate), down from 12 |
+| **What changed** | Immutable S3 backup vault deployed; ransomware tabletop exercise conducted and findings closed (POL-008, POL-009) |
 | **Control Owner** | Head of Cloud Ops |
-| **Treatment** | Deploy AWS Backup vault lock; implement immutable S3 backups; conduct ransomware tabletop |
-| **Target** | Q2 2026 |
+| **What remains** | Continued control maturity: backup restoration testing now quarterly per POL-009 |
 
-### 🔴 RSK-003 — API Vulnerability Exploitation
+### 🟠 RSK-003: API Vulnerability Exploitation
 | Field | Detail |
 |---|---|
-| **Residual Score** | 10 (Likelihood 2 × Impact 5) |
-| **Threat Source** | External attacker : opportunistic/targeted |
-| **Core Vulnerability** | Quarterly scanning insufficient; no penetration test completed |
-| **FAIR ALE** | $280,000 – $950,000 / year |
+| **Residual Score** | 8 (Moderate), down from 10 |
+| **What changed** | Continuous Snyk SAST/SCA scanning in CI/CD; 30-day patch SLA with auto-ticketing (POL-010) |
 | **Control Owner** | DevSecOps Engineer |
-| **Treatment** | Weekly vulnerability scanning; establish 30-day CVE SLA; conduct annual penetration test |
-| **Target** | Q1 2026 |
+| **What remains** | Annual penetration test still not formally scheduled |
 
-### 🔴 RSK-004 — Insider Threat / Data Exfiltration
+### 🟠 RSK-005: Software Supply Chain Attack
 | Field | Detail |
 |---|---|
-| **Residual Score** | 8 (Likelihood 2 × Impact 4) |
-| **Threat Source** | Malicious or negligent insider |
-| **Core Vulnerability** | No DLP tooling; no UEBA; access reviews not quarterly |
-| **FAIR ALE** | $150,000 – $600,000 / year |
-| **Control Owner** | GRC Lead |
-| **Treatment** | Implement DLP; deploy UEBA alerting; enforce quarterly access reviews |
-| **Target** | Q3 2026 |
-
-### 🔴 RSK-005 — Software Supply Chain Attack
-| Field | Detail |
-|---|---|
-| **Residual Score** | 12 (Likelihood 3 × Impact 4) |
-| **Threat Source** | Nation-state / sophisticated threat actor |
-| **Core Vulnerability** | No SBOM; SAST not fully deployed; no software vetting process |
-| **FAIR ALE** | $200,000 – $800,000 / year |
+| **Residual Score** | 8 (Moderate), down from 12 |
+| **What changed** | SAST/SCA fully deployed in CI/CD; secure SDLC formalised (POL-018) |
 | **Control Owner** | DevSecOps Engineer |
-| **Treatment** | Implement SBOM generation; enforce code signing; full SAST/SCA in CI/CD |
-| **Target** | Q2 2026 |
+| **What remains** | Formal SBOM generation and code signing still on the roadmap |
 
-### 🔴 RSK-006 — AWS S3 Misconfiguration
+### 🟠 RSK-006: AWS S3 Misconfiguration
 | Field | Detail |
 |---|---|
-| **Residual Score** | 10 (Likelihood 2 × Impact 5) |
-| **Threat Source** | Internal — configuration error |
-| **Core Vulnerability** | IaC not fully enforced; no monthly CSPM review |
-| **FAIR ALE** | $180,000 – $750,000 / year |
+| **Residual Score** | 8 (Moderate), down from 10 |
+| **What changed** | CIS baseline enforced, public S3 access disabled by policy (POL-022) |
 | **Control Owner** | Head of Cloud Ops |
-| **Treatment** | Implement Security Hub CIS checks; enforce IaC policy guardrails; monthly CSPM review |
-| **Target** | Q1 2026 |
+| **What remains** | Monthly CSPM review not yet a standing cadence |
 
-### 🔴 RSK-008 — IAM Over-Privilege
+### 🟠 RSK-008: IAM Over-Privilege
 | Field | Detail |
 |---|---|
-| **Residual Score** | 12 (Likelihood 3 × Impact 4) |
-| **Threat Source** | External attacker exploiting over-privileged roles post-compromise |
-| **Core Vulnerability** | No formal PAM programme; IAM Access Analyzer not deployed |
-| **FAIR ALE** | $130,000 – $520,000 / year |
+| **Residual Score** | 8 (Moderate), down from 12 |
+| **What changed** | Least-privilege baseline formalised, PAM requirements defined (POL-022, POL-003 §7) |
 | **Control Owner** | Head of Cloud Ops |
-| **Treatment** | Full IAM access review; deploy IAM Access Analyzer; implement SCPs |
-| **Target** | Q2 2026 |
+| **What remains** | Full IAM Access Analyzer deployment and SCPs still pending |
 
-### 🔴 RSK-016 — SOC 2 Type II Certification Failure
+### 🟠 RSK-011: AWS Vendor Concentration
 | Field | Detail |
 |---|---|
-| **Residual Score** | 8 (Likelihood 2 × Impact 4) |
-| **Threat Source** | Internal — programme execution risk |
-| **Core Vulnerability** | Audit engagement not yet initiated; policies not yet published |
-| **FAIR ALE** | $500,000+ in ARR pipeline risk |
+| **Residual Score** | 8 (Moderate), unchanged |
+| **What changed** | Shared-responsibility model documented; no technical mitigation attempted this cycle |
 | **Control Owner** | GRC Lead |
-| **Treatment** | Execute GRC programme roadmap; engage auditor by Q3 2026; complete Phase 3 policy suite |
-| **Target** | Q3 2026 |
+| **What remains** | Multi-cloud evaluation is a strategic decision, not a control gap; deliberately not pursued yet |
 
-### 🔴 RSK-017 — GDPR Violation
+### 🟠 RSK-012: Stripe Integration Breach (PCI Scope)
 | Field | Detail |
 |---|---|
-| **Residual Score** | 8 (Likelihood 2 × Impact 4) |
-| **Threat Source** | Internal process gap / data subject request failure |
-| **Core Vulnerability** | No ROPA; no DSR process; GDPR data mapping incomplete |
-| **FAIR ALE** | $200,000 – $2,000,000 / year |
-| **Control Owner** | General Counsel |
-| **Treatment** | Conduct GDPR data mapping; implement DSR process; complete ROPA |
-| **Target** | Q2 2026 |
+| **Residual Score** | 8 (Moderate), unchanged |
+| **What changed** | Nothing: deliberately deferred |
+| **Control Owner** | GRC Lead |
+| **What remains** | PCI-DSS v4.0 scope is pending dedicated engagement (see `objectives_scope_goals.md`) |
 
 ---
 
 ## 3. FAIR Quantitative Risk Analysis
 
-FAIR analysis was applied to all risks scoring 12 or above (High/Critical) on the residual 5×5 matrix. The following table presents the full financial exposure picture.
-
-### 3.1 Annualised Loss Expectancy (ALE) Summary
+**Methodology note:** FAIR analysis was originally triggered for risks scoring 12+ (High/Critical). With no risk currently scoring above 11, that threshold no longer selects anything, so this section now covers the 7 Moderate risks instead, to preserve executive visibility into financial exposure even as the underlying risk levels have improved.
 
 | Risk ID | Risk | Res. Level | ALE Low | ALE High | ALE Mid |
 |---|---|---|---|---|---|
-| RSK-001 | Ransomware attack | 🔴 High | $350,000 | $1,200,000 | $775,000 |
-| RSK-002 | Phishing / credential theft | 🟠 Moderate | $95,000 | $420,000 | $257,500 |
-| RSK-003 | API vulnerability exploitation | 🔴 High | $280,000 | $950,000 | $615,000 |
-| RSK-004 | Insider threat / exfiltration | 🔴 High | $150,000 | $600,000 | $375,000 |
-| RSK-005 | Supply chain attack | 🔴 High | $200,000 | $800,000 | $500,000 |
-| RSK-006 | AWS S3 misconfiguration | 🔴 High | $180,000 | $750,000 | $465,000 |
-| RSK-008 | IAM over-privilege | 🔴 High | $130,000 | $520,000 | $325,000 |
-| RSK-012 | Stripe integration breach | 🟠 Moderate | $250,000 | $850,000 | $550,000 |
-| RSK-016 | SOC 2 certification failure | 🔴 High | $500,000 | $1,500,000 | $1,000,000 |
-| RSK-017 | GDPR violation | 🔴 High | $200,000 | $2,000,000 | $1,100,000 |
-| **TOTAL** | **All quantified risks** | | **$2,335,000** | **$9,590,000** | **$5,962,500** |
+| RSK-001 | Ransomware attack | 🟠 Moderate | $140,000 | $520,000 | $330,000 |
+| RSK-003 | API vulnerability exploitation | 🟠 Moderate | $120,000 | $400,000 | $260,000 |
+| RSK-005 | Supply chain attack | 🟠 Moderate | $90,000 | $340,000 | $215,000 |
+| RSK-006 | AWS S3 misconfiguration | 🟠 Moderate | $80,000 | $320,000 | $200,000 |
+| RSK-008 | IAM over-privilege | 🟠 Moderate | $60,000 | $230,000 | $145,000 |
+| RSK-011 | AWS vendor concentration | 🟠 Moderate | $70,000 | $280,000 | $175,000 |
+| RSK-012 | Stripe integration breach (PCI) | 🟠 Moderate | $250,000 | $850,000 | $550,000 |
+| **TOTAL** | **All quantified risks** | | **$810,000** | **$2,940,000** | **$1,875,000** |
 
-> **Note:** ALE figures represent annualised probable loss ranges based on FAIR methodology. They are not predictions but probabilistic estimates informed by threat frequency, control effectiveness, and industry loss data. They should be used to prioritise investment decisions, not as precise forecasts.
-
-### 3.2 FAIR Loss Decomposition — Top 3 Risks
-
-**RSK-001 Ransomware — $775K Mid ALE**
-- TEF: 2 events/year (industry average for fintech sector)
-- Vulnerability: 35% (GuardDuty + EDR reduce but do not eliminate)
-- LEF: 0.7 events/year
-- Primary Loss: $180K (IR, recovery, notification)
-- Secondary Loss: $930K (regulatory fines, legal, reputational, client churn)
-- Loss Magnitude: $1,110K per event
-
-**RSK-017 GDPR — $1,100K Mid ALE**
-- TEF: 1.5 incidents/year (GDPR enforcement is active in financial services)
-- Vulnerability: 45% (no ROPA, no DSR process = high exposure)
-- LEF: 0.675 incidents/year
-- Primary Loss: $120K (legal response, notification, remediation)
-- Secondary Loss: $1,508K (regulatory fine up to 4% global revenue + litigation)
-- Loss Magnitude: $1,628K per event
-
-**RSK-016 SOC 2 Failure — $1,000K Mid ALE**
-- This risk is unique — loss is primarily commercial, not incident-driven
-- Each quarter of delay costs an estimated $125K in deferred enterprise ARR
-- Full certification failure would cost $500K–$1.5M in lost pipeline within 12 months
-- Treatment is programme execution, not a technical control
+> **Note:** ALE figures represent annualised probable loss ranges, reduced from the baseline assessment in proportion to the control improvements each risk saw. RSK-012 (Stripe/PCI) is unchanged since no PCI-DSS work was undertaken this cycle so it remains the largest single exposure in the portfolio precisely because it was deliberately deferred, not because it was overlooked.
 
 ---
 
 ## 4. Risk Treatment Progress
 
-### 4.1 Treatment Decision Summary
+### 4.1 Risks Fully Mitigated This Cycle (10 of 25)
 
-| Treatment | Count | % | Rationale |
-|---|---|---|---|
-| **Mitigate** | 21 | 84% | Primary response — implement or strengthen controls |
-| **Transfer / Mitigate** | 1 | 4% | RSK-011 AWS concentration — cyber insurance + DR strategy |
-| **Accept / Mitigate** | 1 | 4% | RSK-020 SLA breach — buffer SLAs + monitor |
-| **Transfer** | 0 | 0% | No risks currently treated by transfer alone |
-| **Accept** | 2 | 8% | RSK-023 key person risk (mitigated by documentation programme); RSK-015 SendGrid (low residual) |
+| Risk ID | Risk | Closed Via |
+|---|---|---|
+| RSK-009 | Secrets management gaps | POL-012, POL-010, POL-021 |
+| RSK-010 | Logging & monitoring gaps | POL-007 |
+| RSK-013 | Okta break-glass credential handling | POL-012 §5 |
+| RSK-014 | Vendor security posture | POL-005 |
+| RSK-016 | SOC 2 certification risk | POL-001–026 + POL-016: FULLY READY, auditor engagement pending |
+| RSK-017 | GDPR violation | POL-006 + POL-016 |
+| RSK-022 | Offboarding gaps | POL-023 §8: same-day revocation |
+| RSK-023 | Key-person dependency | Entire 26-policy suite formalises what was previously undocumented knowledge |
+| RSK-024 | Change management gaps | POL-013 |
+| RSK-025 | BCP/DR absence | POL-008, POL-009 + DR Failover Tabletop Test Report |
 
-### 4.2 Treatment Timeline
+### 4.2 Treatment Timeline: Remaining Work
 
 | Horizon | Risks | Focus Area |
 |---|---|---|
-| **Q1 2026 (Immediate)** | RSK-003, RSK-006, RSK-009, RSK-015 | API scanning, S3 posture, secrets mgmt, DMARC |
-| **Q2 2026 (30–60 days)** | RSK-001, RSK-002, RSK-005, RSK-008, RSK-012, RSK-013, RSK-017 | Ransomware controls, phishing-resistant MFA, supply chain, IAM, GDPR |
-| **Q3 2026 (60–90 days)** | RSK-004, RSK-016, RSK-018, RSK-019 | DLP/UEBA, SOC 2 audit engagement, PCI-DSS, CCPA |
-| **Q4 2026 (Ongoing)** | RSK-007, RSK-011, RSK-020, RSK-023 | DR strategy, vendor concentration, SLA management, key person |
+| **In progress** | RSK-001, RSK-003, RSK-005, RSK-006, RSK-008 | Continued control maturity: CSPM cadence, IAM Access Analyzer, penetration testing, SBOM |
+| **Deliberately deferred** | RSK-012, RSK-018 | PCI-DSS v4.0 scope: defered for now |
+| **Untouched, low priority** | RSK-011, RSK-015, RSK-019, RSK-020 | AWS concentration (strategic), email spoofing, CCPA intake, SLA/commercial |
 
 ---
 
 ## 5. Risk Programme Observations
 
-### What Is Working
-The foundational security controls deployed at ResolvX - Okta SSO with MFA, AWS GuardDuty, EDR on all endpoints, GitHub branch protection, multi-AZ architecture, and Jamf MDM - are collectively reducing inherent risk scores meaningfully. No risks remain at Critical residual level. This is a strong foundation for a company at this stage.
+### What Changed
+The three themes flagged as the programme's focus areas in the baseline assessment (detection & response, cloud posture discipline, and compliance programme execution) are the same three themes that drove nearly all of this cycle's improvement. POL-007 (Logging & Monitoring) closed the detection gap. POL-022 (Cyber Security) and POL-013 (Change Management) closed the cloud posture cluster. The full policy suite plus the re-run internal audit closed the compliance execution risk. This wasn't a coincidence: the policy build was sequenced specifically to hit the risk register's own priority order.
 
-### Where the Programme Must Focus
-Three themes dominate the residual risk profile:
-
-**1. Detection & Response Gap** : The absence of a SIEM, formalised IR Plan, and comprehensive alerting rules means that even well-protected systems have limited detection capability. An attacker who bypasses perimeter controls could operate undetected. SIEM deployment and IR Plan development (Phase 4) are the highest-leverage investments on the roadmap.
-
-**2. Cloud Posture Discipline** : AWS misconfiguration (RSK-006), IAM over-privilege (RSK-008), and secrets management gaps (RSK-009) represent a cluster of addressable risks that stem from the same root cause: fast-moving engineering without fully mature DevSecOps controls. IaC enforcement and a cloud security posture management (CSPM) programme address all three.
-
-**3. Compliance Programme Execution** : RSK-016 (SOC 2 failure) carries the highest single commercial risk in the portfolio. It is not a technical risk — it is a programme execution risk. Every week of delay on policy development (Phase 3), evidence collection (Phase 5), and auditor engagement reduces the probability of Q4 2026 certification. This risk is owned directly by the GRC Lead and CISO.
+### Where the Programme Should Focus Next
+The 7 remaining Moderate risks split into two genuinely different categories: five (RSK-001, 003, 005, 006, 008) are control-maturity work already in progress with named next steps. Two (RSK-011, RSK-012) are **not gaps**: they're risks the programme has looked at and deliberately not acted on yet, for defensible reasons (AWS concentration is a strategic multi-cloud decision, not a quick fix; PCI-DSS is explicitly Step 3 scope). Treating these two identically to the first five would misrepresent the programme's actual priorities.
 
 ### Risk Appetite Alignment
-ResolvX's stated risk appetite (Low for cybersecurity, Very Low for compliance) is consistent with the residual risk profile. The 8 High residual risks all have documented treatment plans with named owners and target dates. No risks are sitting unattended above the accepted tolerance threshold. The programme is operating within its own risk framework.
+ResolvX's stated risk appetite (Low for cybersecurity, Very Low for compliance) is now more fully realised than at baseline; compliance risk in particular moved from the highest-exposure category to the lowest. No risk sits unattended above its documented treatment plan.
 
 ---
 
-## 6. Recommended Board-Level Actions
+## 6. Board-Level Actions: Status
 
-The following three actions are recommended for leadership consideration:
-
-**1. Approve security budget allocation for SIEM and CSPM tooling (Q1 2026)**
-The detection gap is the most significant unmitigated risk cluster. AWS Security Hub + a SIEM solution (estimated $40K–$80K annually) would close RSK-010, RSK-007 (partial), and significantly reduce DE function gaps identified in the NIST CSF 2.0 mapping.
-
-**2. Formally engage a SOC 2 auditor by Q3 2026**
-RSK-016 requires a firm external commitment. Engaging an auditor creates a fixed deadline that drives Phase 3–5 execution and signals to enterprise clients that certification is on a defined timeline. Recommended auditors for SaaS fintech: Drata/Vanta-partnered firms, A-LIGN, Schellman.
-
-**3. Initiate GDPR data mapping and DSR programme (Q2 2026)**
-GDPR carries the highest potential ALE in the portfolio ($200K–$2M). With ResolvX processing EU financial data, the exposure is material. A focused 6-week GDPR remediation sprint (ROPA + DSR process + DPA review) would significantly reduce RSK-017 residual score and demonstrate regulatory maturity to European financial institution clients.
+| Original Recommendation | Status |
+|---|---|
+| Approve security budget for SIEM/CSPM tooling (Q1 2026) | ✅ Delivered: POL-007 formalises logging/monitoring with a staged SIEM roadmap |
+| Formally engage a SOC 2 auditor by Q3 2026 | 🟠 In progress: readiness is FULLY READY as of July 2026; auditor selection is the next concrete step |
+| Initiate GDPR data mapping and DSR programme (Q2 2026) | ✅ Delivered: POL-006 + POL-016 |
+| **New recommendation** | Engage a PCI-DSS QSA or advisory firm to scope RSK-012 and RSK-018, the single largest remaining exposure in the portfolio, currently unaddressed by design rather than oversight |
 
 ---
 
@@ -265,9 +196,17 @@ GDPR carries the highest potential ALE in the portfolio ($200K–$2M). With Reso
 
 | Version | Date | Author | Summary |
 |---|---|---|---|
-| 1.0 | 2026 | Derick G. Dmello : GRC Lead | Initial risk summary report — Phase 2 baseline assessment |
+| 1.0 | 2026 | Derick G. Dmello, GRC Lead | Initial risk summary report: Phase 2 baseline assessment |
+| 2.0 | July 2026 | Derick G. Dmello, GRC Lead | Full re-derivation against the delivered 26-policy suite and re-run internal audit. 8 High residual risks closed to Moderate or lower; 10 risks formally Mitigated; FAIR threshold adjusted to reflect the improved risk profile |
 
 ---
 
-*ResolvX GRC Programme — Confidential — For Internal Distribution and Authorised External Reviewers Only — v1.0 — 2026*
+## Formal Artifact
+
+> 📄 **[Download Full Risk Summary Report (.pdf)](./formal_artifact/risk_summary_report.pdf)**
+> *Formal version with complete risk tables, FAIR decomposition, approval signatures, and document control history.*
+
+---
+
+*ResolvX GRC Programme, Confidential, For Internal Distribution and Authorised External Reviewers Only, v2.0, 2026*
 *Methodology: NIST SP 800-30 Rev. 1 (Qualitative) | FAIR (Quantitative) | ISO/IEC 27001:2022*

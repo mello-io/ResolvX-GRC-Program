@@ -1,6 +1,6 @@
 # 🌐 ResolvX — Threat Landscape Analysis
 
-> **Program:** GRC Compliance & Audit Readiness | **Phase:** 2 — Risk & Controls | **Version:** 1.0
+> **Program:** GRC Compliance & Audit Readiness | **Phase:** 2 — Risk & Controls | **Version:** 1.1
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Phase](https://img.shields.io/badge/Phase-2%20Risk%20%26%20Controls-purple?style=flat-square)
@@ -30,7 +30,7 @@ ResolvX occupies a uniquely high-value position in the threat landscape. As a se
 | **Service organisation model** | Breaching ResolvX means accessing data across all client organisations simultaneously |
 | **Regulatory scrutiny** | Fintech sector faces active enforcement from NYDFS, CFPB, and EU regulators |
 | **Cloud-native architecture** | AWS-hosted environments are actively targeted via misconfiguration and credential attacks |
-| **Third-party dependencies** | Stripe, Okta, and SendGrid integrations extend the attack surface beyond ResolvX's direct control |
+| **Third-party dependencies** | Okta, GitHub, and Stripe integrations extend the attack surface beyond ResolvX's direct control |
 | **Enterprise client pipeline** | SOC 2 audit targets and enterprise sales cycles create reputational risk from any incident |
 
 ---
@@ -227,19 +227,21 @@ The following summarises key threat trends specific to the financial technology 
 
 ## Threat Landscape to Risk Register Mapping
 
+*Residual levels below reflect the risk register as of July 2026, not the original assessment as the register is updated quarterly and following material changes, so this table is inherently a snapshot. See `risk_register.xlsx` for current status.*
+
 | Threat Source | Type | Risk IDs | Residual Level |
 |---|---|---|---|
-| Organised cybercriminal / RaaS | Adversarial | RSK-001, RSK-002 | 🔴 High / 🟠 Moderate |
-| External attacker : opportunistic | Adversarial | RSK-003, RSK-006, RSK-008 | 🔴 High / 🟠 Moderate |
-| Malicious insider | Adversarial | RSK-004, RSK-022 | 🟠 Moderate |
-| Nation-state / APT | Adversarial | RSK-005 | 🔴 High |
-| Developer / engineer error | Accidental | RSK-006, RSK-009, RSK-010 | 🟠 Moderate |
-| End user error | Accidental | RSK-002, RSK-021 | 🟠 Moderate |
-| Administrative process error | Accidental | RSK-022, RSK-024 | 🟠 Moderate |
-| AWS infrastructure failure | Structural | RSK-007, RSK-020 | 🟡 Low |
-| Software vulnerability | Structural | RSK-003, RSK-005 | 🔴 High |
-| Regulatory environment change | Environmental | RSK-016–RSK-020 | 🔴 High / 🟠 Moderate |
-| Vendor disruption | Environmental | RSK-011, RSK-012, RSK-013 | 🟠 Moderate |
+| Organised cybercriminal / RaaS | Adversarial | RSK-001, RSK-002 | 🟠 Moderate / 🟢 Low |
+| External attacker : opportunistic | Adversarial | RSK-003, RSK-006, RSK-008 | 🟠 Moderate |
+| Malicious insider | Adversarial | RSK-004, RSK-022 | 🟢 Low / 🟢 Very Low (RSK-022 Mitigated) |
+| Nation-state / APT | Adversarial | RSK-005 | 🟠 Moderate |
+| Developer / engineer error | Accidental | RSK-006, RSK-009, RSK-010 | 🟠 Moderate / 🟢 Very Low (RSK-009, RSK-010 Mitigated) |
+| End user error | Accidental | RSK-002, RSK-021 | 🟢 Low |
+| Administrative process error | Accidental | RSK-022, RSK-024 | 🟢 Very Low (both Mitigated) |
+| AWS infrastructure failure | Structural | RSK-007, RSK-020 | 🟢 Low |
+| Software vulnerability | Structural | RSK-003, RSK-005 | 🟠 Moderate |
+| Regulatory environment change | Environmental | RSK-016–RSK-020 | 🟢 Very Low (RSK-016, RSK-017 Mitigated) / 🟠 Moderate (RSK-018, RSK-019 deferred) |
+| Vendor disruption | Environmental | RSK-011, RSK-012, RSK-013 | 🟠 Moderate (RSK-011, RSK-012) / 🟢 Very Low (RSK-013 Mitigated) |
 
 ---
 
@@ -255,5 +257,5 @@ The following summarises key threat trends specific to the financial technology 
 
 ---
 
-*ResolvX GRC Program — Internal Use Only — v1.0 — 2026*
+*ResolvX GRC Program — Internal Use Only — v1.1 — 2026*
 *Standards Reference: NIST SP 800-30 Rev. 1, Appendix D (Threat Sources) & Appendix E (Threat Events)*

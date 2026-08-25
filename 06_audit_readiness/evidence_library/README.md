@@ -15,7 +15,7 @@ evidence_library/
 ├── README.md                          
 │
 ├── 01_governance/
-│   ├── policy_approval_signatures/    ← CISO/CEO approval records for POL-001 to POL-006
+│   ├── policy_approval_signatures/    ← CISO/CEO approval records for POL-001 to POL-026
 │   ├── controls_owners_register/      ← Current controls ownership matrix
 │   └── board_meeting_minutes/         ← IS agenda items from management reviews
 │
@@ -38,8 +38,8 @@ evidence_library/
 │   └── guardduty_findings/            ← AWS GuardDuty findings summary Q1 2026
 │
 ├── 05_incident_response/
-│   ├── ir_plan_approval/              ← Signed IR-PLAN-001 v1.0
-│   ├── tabletop_exercise/             ← Tabletop report (Feb 2026) and action item closure evidence
+│   ├── ir_plan_approval/              ← Signed IR-PLAN-001 v1.1
+│   ├── tabletop_exercise/             ← Tabletop reports (ransomware Feb 2026, DR/BCP failover Jul 2026) and action item closure evidence
 │   ├── incident_log/                  ← Sanitised incident log (Q1 2026) - no active incidents
 │   └── runbook_versions/              ← Signed-off runbook versions (IR-RB-001/002/003)
 │
@@ -157,4 +157,4 @@ Requests for additional evidence should be directed to: **GRC Lead - Derick G. D
 
 ---
 
-*ResolvX GRC Program - Phase 5: Audit Readiness - Evidence Library - 2026*
+*ResolvX GRC Program - Phase 5: Audit Readiness - Evidence Library - Updated 2026-07-31*

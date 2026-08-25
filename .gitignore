@@ -6,6 +6,7 @@
 
 # Build/planning materials
 build/
+processor/
 
 # macOS
 .DS_Store

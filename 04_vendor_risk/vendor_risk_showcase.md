@@ -1,6 +1,6 @@
 # 🤝 Vendor Risk & TPRM — ResolvX
 
-> **POL-005 · v1.0 · 2026 · Internal — Confidential**
+> **POL-005 · v1.1 · 2026 · Internal — Confidential**
 > Owner: GRC Lead · Approver: CISO · Review: Annual + event-triggered
 
 ![ISO](https://img.shields.io/badge/ISO%2027001%3A2022-A5.19–A5.23-blue?style=flat-square)
@@ -23,13 +23,13 @@ This phase establishes ResolvX's Third-Party Risk Management (TPRM) framework �
 
 | Metric | Result |
 |---|---|
-| Total Vendors in Register | 18 |
+| Total Vendors in Register | 14 |
 | Tier 1 — Critical | 6 |
-| Tier 2 — High | 5 |
-| Tier 3 — Medium | 4 |
-| Tier 4 — Low | 3 |
+| Tier 2 — High | 6 |
+| Tier 3 — Medium | 2 |
 | Tier 1 Assessments Complete | 6 / 6 |
-| DPAs Executed (data processors) | 100% |
+| Tier 1 + Tier 2 Assessments Complete | 12 / 12 (100%) |
+| DPAs Executed (data processors) | 13 / 13 required (100%) |
 | SOC 2 Type II confirmed (Tier 1) | 6 / 6 |
 | Outstanding Assessment Actions | 0 |
 
@@ -42,7 +42,6 @@ This phase establishes ResolvX's Third-Party Risk Management (TPRM) framework �
 | **Tier 1 — Critical** | Very High | Access to Restricted data; core infrastructure; single point of failure | Annual + event-triggered |
 | **Tier 2 — High** | High | Access to Confidential data; significant BCP dependency; material sub-processors | Annual |
 | **Tier 3 — Medium** | Medium | Internal data access only; limited dependency; replaceable within 30 days | Biennial or on renewal |
-| **Tier 4 — Low** | Low | No data access; no integration; commodity services | Lightweight onboarding check |
 
 Tier assignment is made by the GRC Lead at onboarding and reviewed annually.
 
@@ -145,6 +144,7 @@ All Tier 1 and Tier 2 contracts, and any contract involving personal data access
 | 📊 `tprm_tier1_assessment_reports.xlsx` | XLSX | Scored VSQ responses for all 6 Tier 1 vendors; findings and treatment decisions |
 | 📊 `tprm_vendor_security_questionnaire.xlsx` | XLSX | Blank VSQ template used for all Tier 1 and Tier 2 assessments |
 | 📊 `tprm_subprocessor_register.xlsx` | XLSX | Sub-processor register — vendor, data processed, DPA status, client disclosure |
+| 📄 [TPRM Assessment Report](./tprm_assessment_report.md) | DOCX / PDF | Client & prospect-facing report — how ResolvX manages vendor risk, and how ResolvX itself would score if assessed the same way |
 | 📄 POL-005 | DOCX | Vendor Management Policy — full TPRM framework, lifecycle, contractual requirements |
 
 ---

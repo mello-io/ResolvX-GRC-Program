@@ -1,6 +1,6 @@
 # Runbook: Ransomware Incident Response
 
-**Runbook ID:** IR-RB-002 | **Version:** 1.0 | **Owner:** GRC Lead / Head of Cloud Ops
+**Runbook ID:** IR-RB-002 | **Version:** 1.1 | **Owner:** GRC Lead / Head of Cloud Ops
 **Incident Category:** Malware - Ransomware / Destructive Malware
 **Severity:** P1 by default - downgrade only if confirmed fully isolated with zero spread risk
 
@@ -193,7 +193,7 @@ Recovery sequence:
 - Lessons learned meeting within 5 business days (P1 mandatory)
 - Post-incident report: executive summary + full technical timeline + root cause + remediation plan
 - Update risk register: adjust likelihood and impact of ransomware risk based on incident
-- Review and if necessary implement additional controls: network segmentation, immutable backups, privileged access tightening, EDR coverage expansion
+- Review and if necessary implement additional controls: network segmentation, privileged access tightening, EDR coverage expansion (immutable S3 backup vault is already deployed per POL-009 — confirm this incident didn't reveal any gap in that control)
 - Brief all staff on the incident (sanitised version) as part of awareness improvement
 - Consider engaging external forensic firm to validate eradication completeness
 
@@ -212,4 +212,4 @@ Recovery sequence:
 
 ---
 
-*ResolvX GRC Program - IR-RB-002 - v1.0 - 2026 - Internal - Restricted*
+*ResolvX GRC Program - IR-RB-002 - v1.1 - 2026-07-31 - Internal - Restricted*

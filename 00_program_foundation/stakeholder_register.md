@@ -1,6 +1,6 @@
-# 👥 ResolvX — Stakeholder & Control Owner Register
+# 👥 ResolvX: Stakeholder & Control Owner Register
 
-> **Program:** GRC Compliance & Audit Readiness | **Phase:** 1 — Foundation | **Version:** 1.0
+> **Program:** GRC Compliance & Audit Readiness | **Phase:** 1 (Foundation) | **Version:** 1.1
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Phase](https://img.shields.io/badge/Phase-1%20Foundation-blue?style=flat-square)
@@ -21,10 +21,10 @@ Every control in the ResolvX control matrix maps back to an owner defined here.
 
 | Role | Definition |
 |---|---|
-| **R — Responsible** | Does the work — implements or operates the control |
-| **A — Accountable** | Owns the outcome — signs off, escalation point |
-| **C — Consulted** | Provides input or expertise before decisions are made |
-| **I — Informed** | Kept up to date on progress and outcomes |
+| **R: Responsible** | Does the work: implements or operates the control |
+| **A: Accountable** | Owns the outcome: signs off, escalation point |
+| **C: Consulted** | Provides input or expertise before decisions are made |
+| **I: Informed** | Kept up to date on progress and outcomes |
 
 ---
 
@@ -54,13 +54,13 @@ Every control in the ResolvX control matrix maps back to an owner defined here.
 | Information Security Policies | A.5 | CC1.1, CC1.2 | GRC Lead | CISO |
 | Organization of Information Security | A.5 | CC1.3, CC1.4 | GRC Lead | CISO |
 | Human Resource Security | A.6 | CC1.1, CC1.4 | Head of HR | GRC Lead |
-| Asset Management | A.5 | CC6.1 | Head of Cloud Ops | GRC Lead |
+| Asset Management | A.5 | CC6.1 | GRC Lead | Head of Cloud Ops |
 | Access Control | A.5, A.8 | CC6.1–CC6.3 | IT Administrator | Head of Cloud Ops |
-| Cryptography | A.8 | CC6.7 | DevSecOps Engineer | Head of Cloud Ops |
-| Physical & Environmental Security | A.7 | CC6.4 | Head of HR / Facilities | CISO |
+| Cryptography | A.8 | CC6.7 | Head of Cloud Ops | DevSecOps Engineer |
+| Physical & Environmental Security | A.7 | CC6.4 | IT Admin | CISO |
 | Operations Security | A.8 | CC7.1, CC7.2 | Head of Cloud Ops | DevSecOps Engineer |
 | Communications Security | A.8 | CC6.6, CC6.7 | Head of Cloud Ops | IT Administrator |
-| System Acquisition & Development | A.8 | CC8.1 | VP Engineering | DevSecOps Engineer |
+| System Acquisition & Development | A.8 | CC8.1 | DevSecOps Engineer | VP Engineering |
 | Supplier Relationships (TPRM) | A.5 | CC9.1, CC9.2 | GRC Lead | General Counsel |
 | Incident Management | A.5, A.6 | CC7.3–CC7.5 | GRC Lead | Head of Cloud Ops |
 | Business Continuity | A.5 | A1.1–A1.3 | VP Engineering | Head of Cloud Ops |
@@ -78,10 +78,10 @@ Every control in the ResolvX control matrix maps back to an owner defined here.
 
 | Level | Trigger | Escalate To | Timeframe |
 |---|---|---|---|
-| 🟢 **Level 1 — Operational** | Control deficiency identified during testing | GRC Lead | Within 5 business days |
-| 🟡 **Level 2 — Program** | High-severity gap or failed audit finding | CISO | Within 48 hours |
-| 🔴 **Level 3 — Executive** | Critical risk, breach, or regulatory notification | CTO / CEO / Legal | Immediately |
-| ⚫ **Level 4 — Board** | Material incident or significant compliance failure | Board of Directors | Within 72 hours of L3 |
+| 🟢 **Level 1: Operational** | Control deficiency identified during testing | GRC Lead | Within 5 business days |
+| 🟡 **Level 2: Program** | High-severity gap or failed audit finding | CISO | Within 48 hours |
+| 🔴 **Level 3: Executive** | Critical risk, breach, or regulatory notification | CTO / CEO / Legal | Immediately |
+| ⚫ **Level 4: Board** | Material incident or significant compliance failure | Board of Directors | Within 72 hours of L3 |
 
 ---
 
@@ -92,4 +92,4 @@ Every control in the ResolvX control matrix maps back to an owner defined here.
 
 ---
 
-*ResolvX GRC Program — Internal Use Only — v1.0 — 2026*
+*ResolvX GRC Program, Internal Use Only, v1.1, 2026*
