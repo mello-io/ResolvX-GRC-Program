@@ -550,9 +550,9 @@
         ISO 27001:2022 : Aligned
       </div>
       <div class="cert-pill">
-        <span class="align-dot amber"></span>
+        <span class="align-dot green"></span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        SOC 2 Type II : In Progress
+        SOC 2 Type II : Fully Ready
       </div>
       <div class="cert-pill">
         <span class="align-dot green"></span>
@@ -577,8 +577,8 @@
 <div class="container" style="padding-top: 4rem; padding-bottom: 0;">
   <div class="metrics-strip">
     <div class="metric">
-      <div class="value">22<span>/26</span></div>
-      <div class="label">ISO 27001 Controls Conformant</div>
+      <div class="value">77<span>/93</span></div>
+      <div class="label">ISO 27001 Controls Implemented</div>
     </div>
     <div class="metric">
       <div class="value">6<span>/6</span></div>
@@ -590,7 +590,7 @@
     </div>
     <div class="metric">
       <div class="value"><span>0</span></div>
-      <div class="label">Major Nonconformities <br>(Q1 2026 Audit)</div>
+      <div class="label">Major Nonconformities <br>(Re-Audited 2026-07-31)</div>
     </div>
   </div>
 </div>
@@ -598,10 +598,10 @@
 <!-- ═══ DOCUMENT LIBRARY (C2 layout · G1 access treatment) ═══ -->
 <section id="documents">
   <div class="container">
-    <div class="last-updated"><span class="dot"></span> Last updated: March 2026</div>
+    <div class="last-updated"><span class="dot"></span> Last updated: 2026-07-31</div>
     <div class="section-label">Programme Deliverables</div>
     <h2 class="section-title">Document Library</h2>
-    <p class="section-sub">ResolvX is proud to showcase its six-phase GRC programme. Public documents link directly to the project repository. <br>Confidential documents require a signed NDA - request access via security@resolvx.io.</p>
+    <p class="section-sub">ResolvX is proud to showcase its six-phase GRC programme — now spanning 26 policies across every control domain. Public documents link directly to the project repository. <br>Confidential documents require a signed NDA - request access via security@resolvx.io.</p>
 
     <!-- FILTERS (C2) -->
     <div class="lib-controls">
@@ -613,7 +613,7 @@
         <button class="filter-btn" onclick="filterDocs('ir',this)">Incident Response</button>
         <button class="filter-btn" onclick="filterDocs('vendor',this)">Vendor Risk</button>
       </div>
-      <span class="lib-count" id="lib-count">23 documents</span>
+      <span class="lib-count" id="lib-count">48 documents</span>
     </div>
 
     <!-- PHASE 1 -->
@@ -789,6 +789,146 @@
         </div>
         <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-006_privacy_programme.pdf" target="_blank">View Document →</a></div>
       </div>
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Logging &amp; Monitoring Policy (POL-007)</div><div class="doc-desc">Log source coverage, retention, SIEM roadmap, correlation rules across 7 platforms</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-007_logging_monitoring_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">BCP/DR Policy &amp; Plan (POL-008)</div><div class="doc-desc">RTO/RPO by criticality tier, activation authority, tested via DR failover tabletop</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-008_bcp_dr_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Backup &amp; Recovery Policy (POL-009)</div><div class="doc-desc">Immutable backup copies, integrity verification, quarterly restoration testing</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-009_backup_recovery_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Patch Management Policy (POL-010)</div><div class="doc-desc">Severity-based SLA, emergency patching, continuous scanning with auto-ticketing</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-010_patch_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Asset Management Policy (POL-011)</div><div class="doc-desc">Formal asset register, quarterly reconciliation, authorized software list</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-011_asset_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Password Policy (POL-012)</div><div class="doc-desc">Password manager mandate, breach monitoring, break-glass credential handling</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-012_password_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Change Management Policy (POL-013)</div><div class="doc-desc">3-tier change categorisation, peer review, automated rollback windows</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-013_change_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Risk Management Policy (POL-014)</div><div class="doc-desc">Tiered risk acceptance authority, quarterly review, thematic root-cause clustering</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-014_risk_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Incident Management Policy (POL-015)</div><div class="doc-desc">Universal reporting obligation, declaration authority, insider/HR incident handling</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-015_incident_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Breach Management Policy (POL-016)</div><div class="doc-desc">EU/US notification framework, risk determination methodology, regulator templates</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-016_breach_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Root Cause Analysis Policy (POL-017)</div><div class="doc-desc">Five Whys methodology, repeat-finding escalation, effectiveness verification</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-017_root_cause_analysis_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Secure SDLC Policy (POL-018)</div><div class="doc-desc">Threat modelling triggers, secure coding standards, test data protection</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-018_secure_sdlc_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">DLP Policy (POL-019)</div><div class="doc-desc">Current DLP scope, phased tooling roadmap, formally accepted residual risk</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-019_dlp_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Data Destruction Policy (POL-020)</div><div class="doc-desc">Destruction method by system type, legal hold process, crypto-shredding for backups</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-020_data_destruction_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Cryptography &amp; Key Management Policy (POL-021)</div><div class="doc-desc">Approved algorithms, key lifecycle, certificate management standards</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-021_cryptography_key_management_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Cyber Security Policy (POL-022)</div><div class="doc-desc">Network segmentation, endpoint hardening, cloud infrastructure baseline (CIS)</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-022_cyber_security_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">HR Security Policy (POL-023)</div><div class="doc-desc">Tiered screening, same-day termination revocation, dormant account reconciliation</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-023_hr_security_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Physical &amp; Environmental Security Policy (POL-024)</div><div class="doc-desc">AWS shared-responsibility model, workspace access, regional environmental risk</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-024_physical_environmental_security_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Clean Desk &amp; Clear Screen Policy (POL-025)</div><div class="doc-desc">Manual screen-lock expectation, physical document handling, remote workspace discretion</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-025_clean_desk_clear_screen_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
+      <div class="doc-card" data-cat="policy">
+        <div class="doc-card-left"><div class="doc-icon docx">&#128196;</div>
+          <div class="doc-meta"><div class="doc-name">Policy Exception Governance Policy (POL-026)</div><div class="doc-desc">Tiered exception approval authority, duration limits by risk tier, quarterly review</div></div>
+        </div>
+        <div class="doc-card-right"><span class="type-tag">PDF</span><span class="access-badge public">&#9679; Public</span><a class="doc-btn view" href="https://github.com/mello-io/ResolvX-GRC-Program/blob/main/03_policies_and_procedures/formal_artifact/pol-026_policy_exception_governance_policy.pdf" target="_blank">View Document &#8594;</a></div>
+      </div>
+
 
       <div class="doc-card locked" data-cat="vendor">
         <div class="doc-card-left">
@@ -869,6 +1009,21 @@
           <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — Tabletop Exercise Report" target="_blank">Request Access</a>
         </div>
       </div>
+      <div class="doc-card locked" data-cat="ir">
+        <div class="doc-card-left">
+          <div class="doc-icon locked-icon">&#128200;<span class="lock-overlay">&#128274;</span></div>
+          <div class="doc-meta">
+            <div class="doc-name">DR Failover Tabletop Report : Operation Steady Ground</div>
+            <div class="doc-desc">Jul 2026 · full BCP/DR scenario · recovered within 98% of Critical-tier RTO budget</div>
+          </div>
+        </div>
+        <div class="doc-card-right">
+          <span class="type-tag">XLSX</span>
+          <span class="access-badge nda">&#128274; Confidential · NDA</span>
+          <a class="doc-btn request" href="mailto:security@resolvx.io?subject=NDA Request — DR Tabletop Report" target="_blank">Request Access</a>
+        </div>
+      </div>
+
     </div>
 
     <!-- PHASE 5 -->
@@ -895,7 +1050,7 @@
           <div class="doc-icon locked-icon">&#128196;<span class="lock-overlay">&#128274;</span></div>
           <div class="doc-meta">
             <div class="doc-name">Internal Audit Report </div>
-            <div class="doc-desc">Q1 2026 · Satisfactory verdict · 0 major NCs · 5 minor NCs · 3 observations with root cause</div>
+            <div class="doc-desc">Re-audited 2026-07-31 · Satisfactory verdict · 0 major NCs · 0 minor NCs (was 5) · 2 observations remain</div>
           </div>
         </div>
         <div class="doc-card-right">
@@ -910,7 +1065,7 @@
           <div class="doc-icon locked-icon">&#127919;<span class="lock-overlay">&#128274;</span></div>
           <div class="doc-meta">
             <div class="doc-name">SOC 2 Type II Readiness Assessment </div>
-            <div class="doc-desc">88% readiness · Substantially Ready · gap details · observation period target Aug 2026</div>
+            <div class="doc-desc">98% readiness · Fully Ready · all control gaps closed · auditor engagement in progress</div>
           </div>
         </div>
         <div class="doc-card-right">
@@ -925,7 +1080,7 @@
           <div class="doc-icon locked-icon">&#128200;<span class="lock-overlay">&#128274;</span></div>
           <div class="doc-meta">
             <div class="doc-name">Corrective Action Plan </div>
-            <div class="doc-desc">8 actions · root cause, owner, due date, verification method · Q2 2026 remediation target</div>
+            <div class="doc-desc">8 actions · 7 closed, 1 open · root cause, owner, due date, verification method</div>
           </div>
         </div>
         <div class="doc-card-right">
@@ -997,13 +1152,13 @@
       <div class="posture-card navy">
         <div class="posture-icon navy">🛡️</div>
         <h3>Endpoint Security</h3>
-        <p>All endpoints managed via Jamf MDM. Full-disk encryption enforced on all devices. Screen lock after 5 minutes. Remote wipe capability tested quarterly. EDR agent deployed across 100% of fleet.</p>
+        <p>All endpoints managed via Jamf MDM. Full-disk encryption enforced on all devices. Screen lock after a maximum of 10 minutes of inactivity, with manual lock expected any time a device is unattended. EDR agent deployed across 100% of fleet.</p>
         <div class="posture-status active"><span class="dot-sm"></span> Implemented</div>
       </div>
       <div class="posture-card green">
         <div class="posture-icon green">🔍</div>
         <h3>Vulnerability Management</h3>
-        <p>Snyk integrated into all CI/CD pipelines for SAST and SCA scanning. Patch SLAs: Critical within 24 hours, High within 72 hours, Medium within 30 days. AWS Inspector enabled. No unpatched critical vulnerabilities.</p>
+        <p>Snyk integrated into all CI/CD pipelines for SAST and SCA scanning, with automatic ticket creation on High/Critical findings. Patch SLAs: Critical within 7 days, High within 30 days, Medium within 60 days, Low within 90 days. No High-severity findings open past SLA.</p>
         <div class="posture-status active"><span class="dot-sm"></span> Implemented</div>
       </div>
       <div class="posture-card teal">
@@ -1027,7 +1182,7 @@
   <div class="container">
     <p class="section-label">Compliance Frameworks</p>
     <h2 class="section-title">Standards and certifications</h2>
-    <p class="section-sub">We align our ISMS to leading international standards. Our Q1 2026 internal audit confirmed conformance across all tested controls.</p>
+    <p class="section-sub">We align our ISMS to leading international standards. Our internal audit was re-performed 2026-07-31, confirming conformance across all tested controls with 0 open minor nonconformities (down from 5).</p>
 
     <table class="compliance-table" style="margin-bottom: 3rem;">
       <thead>
@@ -1044,36 +1199,36 @@
           <td>ISO/IEC 27001:2022</td>
           <td>Full ISMS. Across all systems, data, and personnel</td>
           <td><span class="badge green">Aligned</span></td>
-          <td>Internal audit Q1 2026 · <br>0 major NCs</td>
-          <td>Mar 2026</td>
+          <td>Internal audit re-performed 2026-07-31 · <br>0 major NCs, 0 minor NCs</td>
+          <td>2026-07-31</td>
         </tr>
         <tr>
           <td>SOC 2 Trust Service Criteria</td>
           <td>Security, Availability, Confidentiality</td>
-          <td><span class="badge amber">Type II In Progress</span></td>
-          <td>Readiness: 88% · Observation period Aug 2026</td>
-          <td>Mar 2026</td>
+          <td><span class="badge green">Fully Ready</span></td>
+          <td>Readiness: 98% (17/17 criteria Ready) · Auditor engagement in progress</td>
+          <td>2026-07-31</td>
         </tr>
         <tr>
           <td>GDPR (EU) 2016/679</td>
           <td>All personal data processing activities</td>
           <td><span class="badge green">Compliant</span></td>
-          <td>ROPA maintained · DPAs executed · DSR process live</td>
-          <td>Mar 2026</td>
+          <td>ROPA maintained · DPAs executed · DSR process live · Breach notification framework extended (EU/US)</td>
+          <td>2026-07-31</td>
         </tr>
         <tr>
           <td>NIST CSF 2.0</td>
           <td>GV, ID, PR, DE, RS, RC functions</td>
           <td><span class="badge green">Aligned</span></td>
-          <td>Control matrix mapped · Gap analysis complete</td>
-          <td>Q4 2025</td>
+          <td>82/103 subcategories Implemented · Gap analysis re-derived 2026-07-31</td>
+          <td>2026-07-31</td>
         </tr>
         <tr>
           <td>NIST SP 800 - 61 Rev 2</td>
           <td>Incident response lifecycle</td>
           <td><span class="badge green">Implemented</span></td>
-          <td>IR plan, 3 runbooks, tabletop Feb 2026</td>
-          <td>Feb 2026</td>
+          <td>IR plan v1.1, 3 runbooks, 2 tabletops (Feb 2026 ransomware, Jul 2026 DR failover)</td>
+          <td>2026-07-31</td>
         </tr>
         <tr>
           <td>NIST SP 800 - 53B (Moderate Baseline)</td>
@@ -1087,7 +1242,7 @@
 
     <div class="controls-grid">
       <div class="control-block">
-        <h3>ISO 27001:2022 - Key Controls <span class="count">22 Conformant</span></h3>
+        <h3>ISO 27001:2022 - Key Controls <span class="count">77/93 Implemented</span></h3>
         <div class="control-list">
           <div class="control-item"><span class="name">A5.1 Information Security Policies</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">A5.15 Access Control</span><span class="tick">✓</span></div>
@@ -1102,9 +1257,10 @@
         </div>
       </div>
       <div class="control-block">
-        <h3>SOC 2 TSC - Ready Families <span class="count">7 / 9 Full</span></h3>
+        <h3>SOC 2 TSC - Ready Families <span class="count">9 / 9 Full</span></h3>
         <div class="control-list">
           <div class="control-item"><span class="name">CC1 Control Environment</span><span class="tick">✓</span></div>
+          <div class="control-item"><span class="name">CC2 Communication &amp; Information</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC3 Risk Assessment</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC4 Monitoring of Controls</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC5 Control Activities</span><span class="tick">✓</span></div>
@@ -1112,7 +1268,6 @@
           <div class="control-item"><span class="name">CC7 System Operations</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC8 Change Management</span><span class="tick">✓</span></div>
           <div class="control-item"><span class="name">CC9 Risk Mitigation - Vendor</span><span class="tick">✓</span></div>
-          <div class="control-item"><span class="name">CC2 Communication &amp; Information</span><span class="badge amber" style="font-size:0.7rem;">Training gap - Q2 2026</span></div>
         </div>
       </div>
     </div>
@@ -1190,7 +1345,7 @@
   <div class="container">
     <p class="section-label">Incident Response</p>
     <h2 class="section-title">How we respond to security incidents</h2>
-    <p class="section-sub">ResolvX maintains a documented, tested incident response programme aligned to NIST SP 800-61 Rev 2. Our last tabletop exercise was conducted in February 2026.</p>
+    <p class="section-sub">ResolvX maintains a documented, tested incident response programme aligned to NIST SP 800-61 Rev 2. Two tabletop exercises are now on record: a ransomware scenario (February 2026) and a full DR/BCP failover exercise (July 2026), which recovered within 98% of the Critical-tier RTO budget.</p>
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
       <div>
@@ -1369,7 +1524,7 @@
     <a>Cookie Policy</a>
     <a>Vulnerability Disclosure</a>
   </div>
-  <div>Last updated: March 2026</div>
+  <div>Last updated: 2026-07-31</div>
 </footer>
 
 <script>
